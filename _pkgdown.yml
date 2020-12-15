@@ -22,5 +22,5 @@ template:
   params:
     customanalytics:
       domain: preferably.amirmasoudabdol.name
-      src: https://stats.preferebly.amirmasoudabdol.name/js/index.js
+      src: https://stats.preferably.amirmasoudabdol.name/js/index.js
   default_assets: false
