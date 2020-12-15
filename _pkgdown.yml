@@ -1,0 +1,26 @@
+url: https://preferably.amirmasoudabdol.name
+
+home:
+  title: Preferably Template
+
+authors:
+  Amir Masoud Abdol:
+    href: https://amirmasoudabdol.name
+
+development:
+  mode: auto
+
+repo:
+  url:
+    home: https://github.com/amirmasoudabdol/preferably/
+    source: https://github.com/amirmasoudabdol/preferably/blob/main/
+    issue: https://github.com/amirmasoudabdol/preferably/issues/
+    user: https://github.com/amirmasoudabdol/
+
+template:
+  package: preferably
+  params:
+    customanalytics:
+      domain: preferably.amirmasoudabdol.name
+      src: https://stats.preferebly.amirmasoudabdol.name/js/index.js
+  default_assets: false

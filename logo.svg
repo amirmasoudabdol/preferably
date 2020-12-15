@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns:dc="http://purl.org/dc/elements/1.1/" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xl="http://www.w3.org/1999/xlink" viewBox="389.5 219.12325 181.51476 207.9785" width="181.51476" height="207.9785">
+  <defs>
+    <font-face font-family="Stanley" font-size="24" panose-1="2 11 8 5 5 0 0 2 0 4" units-per-em="1000" underline-position="-142" underline-thickness="30" slope="0" x-height="511" cap-height="640" ascent="993.002" descent="-283.00057" font-weight="700" font-stretch="expanded">
+      <font-face-src>
+        <font-face-name name="Stanley-Normal"/>
+      </font-face-src>
+    </font-face>
+    <font-face font-family="Stanley" font-size="27" panose-1="2 11 8 5 5 0 0 2 0 4" units-per-em="1000" underline-position="-142" underline-thickness="30" slope="0" x-height="511" cap-height="640" ascent="993.002" descent="-283.00057" font-weight="700" font-stretch="expanded">
+      <font-face-src>
+        <font-face-name name="Stanley-Normal"/>
+      </font-face-src>
+    </font-face>
+  </defs>
+  <metadata> Produced by OmniGraffle 7.18.1\n2020-12-15 13:54:22 +0000</metadata>
+  <g id="Canvas_1" fill="none" fill-opacity="1" stroke="none" stroke-opacity="1" stroke-dasharray="none">
+    <title>Canvas 1</title>
+    <g id="Canvas_1_Layer_1">
+      <title>Layer 1</title>
+      <g id="Graphic_19">
+        <path d="M 479.74125 219.12326 L 479.74125 427.10175 C 480.4369 427.10327 481.1329 426.92353 481.75576 426.56253 L 568.00576 376.57456 C 569.2401 375.85916 570 374.54048 570 373.1138 L 570 273.11122 C 570 271.68453 569.2401 270.36585 568.00576 269.65045 L 481.75576 219.66248 C 481.1329 219.30148 480.4369 219.12174 479.74125 219.12326 Z" fill="#fafafa"/>
+      </g>
+      <g id="Graphic_18">
+        <path d="M 479.76917 219.1233 C 479.07004 219.11995 478.3702 219.29968 477.74424 219.66248 L 391.49424 269.65045 C 390.2599 270.36585 389.5 271.68453 389.5 273.11122 L 389.5 373.1138 C 389.5 374.54048 390.2599 375.85916 391.49424 376.57456 L 477.74424 426.56253 C 478.3702 426.92533 479.07004 427.10506 479.76917 427.1017 Z" fill="#141414"/>
+      </g>
+      <g id="Graphic_3">
+        <text transform="translate(389.51043 307.6125)" fill="#fafafa">
+          <tspan font-family="Stanley" font-size="24" font-weight="700" fill="#fafafa" x="3.3933716" y="24">Prefe</tspan>
+        </text>
+      </g>
+      <g id="Graphic_20">
+        <text transform="translate(479.76917 305.6125)" fill="#141414">
+          <tspan font-family="Stanley" font-size="27" font-weight="700" fill="#141414" x="2.490295" y="27">rably</tspan>
+        </text>
+      </g>
+    </g>
+  </g>
+</svg>

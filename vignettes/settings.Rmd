@@ -1,0 +1,10 @@
+---
+title: "Settings"
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{Settings}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+
+These are the settings

@@ -1,0 +1,11 @@
+.Rproj.user
+.Rhistory
+.RData
+.Ruserdata
+
+# Folders
+docs/
+
+# macOS
+.DS_Store
+docs
