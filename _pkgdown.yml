@@ -23,4 +23,5 @@ template:
     customanalytics:
       domain: preferably.amirmasoudabdol.name
       src: https://stats.preferably.amirmasoudabdol.name/js/index.js
+    switch: manual
   default_assets: false

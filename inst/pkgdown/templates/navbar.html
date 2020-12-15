@@ -22,6 +22,14 @@
       {{/left}}
       {{#right}}
       <ul class="nav navbar-nav navbar-right">
+        {{#yaml}}{{#switch}}
+          <a
+            href="javascript:void()"
+            class="btn btn-default navbar-btn"
+            id="theme-toggler"
+            onclick="toggleTheme()"
+          >Light/Dark</a>
+        {{/switch}}{{/yaml}}
         {{{.}}}
       </ul>
       {{/right}}

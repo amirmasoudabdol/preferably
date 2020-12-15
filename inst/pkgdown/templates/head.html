@@ -3,7 +3,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <!-- Notifying the browser about available color schemes -->
-<meta name="color-scheme" content="dark light">
+<!-- <meta name="color-scheme" content="dark light">
 <script>
   // If `prefers-color-scheme` is not supported, fall back to light mode.
   // i.e. In this case, inject the `light` CSS before the others, with
@@ -15,7 +15,7 @@
       "<link rel=\"stylesheet\" href=\"bootstrap.css\" onload=\"document.documentElement.style.display = ''\">"
     );
   }
-</script>
+</script> -->
 
 <title>{{{pagetitle}}} • {{#site}}{{title}}{{/site}}</title>
 
@@ -43,6 +43,11 @@
 
 <!-- preferably CSS -->
 <link rel="stylesheet" href="{{#site}}{{root}}{{/site}}preferably.css">
+
+{{#yaml}}{{#switch}}
+<script src="{{#site}}{{root}}{{/site}}darkswitch.js"></script>
+<link id="dark-theme-style" rel="stylesheet" />
+{{/switch}}{{/yaml}}
 
 <!-- bootstrap-toc -->
 <link rel="stylesheet" href="{{#site}}{{root}}{{/site}}bootstrap-toc.css">
