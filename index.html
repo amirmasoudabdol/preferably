@@ -18,7 +18,7 @@
       "<link id=\"css\" rel=\"stylesheet\" href=\"bootstrap.css\" onload=\"document.documentElement.style.display = ''\">"
     );
   }
-</script><title>Preferably Template • preferably</title>
+</script><title>A 'pkgdown' Template • preferably</title>
 <!-- favicons --><link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
 <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
 <link rel="apple-touch-icon" type="image/png" sizes="180x180" href="apple-touch-icon.png">
@@ -34,8 +34,8 @@
 <script src="bootstrap-toc.js"></script><!-- Font Awesome icons --><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css" integrity="sha256-mmgLkCYLUQbXn0B1SRqzHar6dCnv9oZFPEC1g1cwlkk=" crossorigin="anonymous">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/v4-shims.min.css" integrity="sha256-wZjR52fzng1pJHwx4aV2AO3yyTOXrcDW7jBpJtTwVxw=" crossorigin="anonymous">
 <!-- clipboard.js --><script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.6/clipboard.min.js" integrity="sha256-inc5kl9MA1hkeYUt+EC3BhlIgyp/2jDIyBLS6k3UxPI=" crossorigin="anonymous"></script><!-- headroom.js --><script src="https://cdnjs.cloudflare.com/ajax/libs/headroom/0.11.0/headroom.min.js" integrity="sha256-AsUX4SJE1+yuDu5+mAVzJbuYNPHj/WroHuZ8Ir/CkE0=" crossorigin="anonymous"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/headroom/0.11.0/jQuery.headroom.min.js" integrity="sha256-ZX/yNShbjqsohH1k95liqY9Gd8uOiE1S4vZc+9KQ1K4=" crossorigin="anonymous"></script><!-- pkgdown --><link href="pkgdown.css" rel="stylesheet">
-<script src="pkgdown.js"></script><meta property="og:title" content="Preferably Template">
-<meta property="og:description" content="Preferably is an accessible template for `pkgdown` package. ">
+<script src="pkgdown.js"></script><meta property="og:title" content="A 'pkgdown' Template">
+<meta property="og:description" content="This is a pkgdown template. preferably uses two bootstrap themes, Flatly and Darkly and utilizes the prefers-color-scheme variable to serve either of the themes based on user’s operating system setting.">
 <meta property="og:image" content="https://preferably.amirmasoudabdol.name/logo.svg">
 <!-- mathjax --><script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js" integrity="sha256-nvJJv9wWKEm88qvoQl9ekL2J+k/RWIsaSScxxlsrv8k=" crossorigin="anonymous"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/config/TeX-AMS-MML_HTMLorMML.js" integrity="sha256-84DKXVJXs0/F8OTMzX4UR909+jtl4G7SPypPavF+GfA=" crossorigin="anonymous"></script><!-- Custom Analytics --><script async defer data-domain="preferably.amirmasoudabdol.name" src="https://stats.preferably.amirmasoudabdol.name/js/index.js"></script><!--[if lt IE 9]>
 <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
@@ -77,7 +77,7 @@
         
         <li>
   <a href="https://github.com/amirmasoudabdol/preferably/">
-    <span class="fab fa fab fa-github fa-lg"></span>
+    <span class="fab fa-github fa-lg"></span>
      
   </a>
 </li>
@@ -93,6 +93,8 @@
 
       </header><div class="row">
   <div class="contents col-md-9">
+
+
 <div id="preferably-" class="section level1">
 <div class="page-header"><h1 class="hasAnchor">
 <a href="#preferably-" class="anchor"></a>preferably <img src="reference/figures/logo.png" width="20%" align="right">
@@ -124,7 +126,7 @@
 <div id="customization" class="section level2">
 <h2 class="hasAnchor">
 <a href="#customization" class="anchor"></a>Customization</h2>
-<p>In addition of pkgdown customizations, Preferably offers a few more options as listed here.</p>
+<p>In addition of pkgdown customization, Preferably offers a few more options as listed here.</p>
 <div id="custom-analytic" class="section level3">
 <h3 class="hasAnchor">
 <a href="#custom-analytic" class="anchor"></a>Custom Analytic</h3>
@@ -138,12 +140,12 @@
 <span id="cb3-7"><a href="#cb3-7" aria-hidden="true" tabindex="-1"></a><span class="at">  </span><span class="fu">default_assets</span><span class="kw">:</span><span class="at"> </span><span class="ch">false</span></span></code></pre></div>
 <p>Setting these command will generate the following line in the HTML:</p>
 <div class="sourceCode" id="cb4"><pre class="sourceCode html"><code class="sourceCode html"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="kw">&lt;script</span><span class="ot"> async defer data-domain=</span><span class="st">"example.com"</span><span class="ot"> src=</span><span class="st">"https://example.com/tracker.js"</span><span class="kw">&gt;&lt;/script&gt;</span></span></code></pre></div>
-<p>In case this setting doesn’t satisfy your need or you have a better idea on how to implement this, please reach out on <a href="https://github.com/amirmasoudabdol/preferably/issues/">GitHub</a></p>
+<p>In case this setting does not satisfy your need or you have a better idea on how to implement this, please reach out on <a href="https://github.com/amirmasoudabdol/preferably/issues/">GitHub</a></p>
 </div>
 <div id="lightdark-switch" class="section level3">
 <h3 class="hasAnchor">
 <a href="#lightdark-switch" class="anchor"></a>Light/Dark Switch</h3>
-<p>In addition to the automatic color scheme switching, you can add a switch to maunally toggle between light and dark themes. This can be done by setting the <code>toggle</code> option to <code>manual</code>.</p>
+<p>In addition to the automatic color scheme switching, you can add a switch to manually toggle between light and dark themes. This can be done by setting the <code>toggle</code> option to <code>manual</code>.</p>
 <div class="sourceCode" id="cb5"><pre class="sourceCode yaml"><code class="sourceCode yaml"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="at">  </span><span class="fu">package</span><span class="kw">:</span><span class="at"> preferably</span></span>
 <span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a><span class="at">  </span><span class="fu">params</span><span class="kw">:</span></span>
 <span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a><span class="at">    </span><span class="fu">toggle</span><span class="kw">:</span><span class="at"> manual</span></span></code></pre></div>
@@ -151,6 +153,7 @@
 </div>
 </div>
 </div>
+
   </div>
 
   <div class="col-md-3 hidden-xs hidden-sm" id="pkgdown-sidebar">
@@ -179,7 +182,13 @@
 </ul>
 </div>
 
-  </div>
+  <div class="dev-status">
+<h2>Dev status</h2>
+<ul class="list-unstyled">
+<li><a href="https://travis-ci.com/amirmasoudabdol/preferably"><img src="https://travis-ci.com/amirmasoudabdol/preferably.svg?branch=main" alt="Travis build status"></a></li>
+</ul>
+</div>
+</div>
 </div>
 
 
