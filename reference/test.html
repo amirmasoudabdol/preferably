@@ -6,7 +6,8 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<!-- Notifying the browser about available color schemes -->
+<!-- Inform modern browsers that this page supports both dark and light color schemes,
+  and the page author prefers light. -->
 <meta name="color-scheme" content="dark light">
 <script>
   // If `prefers-color-scheme` is not supported, fall back to light mode.
@@ -16,7 +17,7 @@
     document.documentElement.style.display = "none";
     document.head.insertAdjacentHTML(
       "beforeend",
-      "<link rel=\"stylesheet\" href=\"bootstrap.css\" onload=\"document.documentElement.style.display = ''\">"
+      "<link id=\"css\" rel=\"stylesheet\" href=\"bootstrap.css\" onload=\"document.documentElement.style.display = ''\">"
     );
   }
 </script>
@@ -38,13 +39,19 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.4.1/js/bootstrap.min.js" integrity="sha256-nuL8/2cJ5NDSSwnKD8VqreErSWHtnEP9E7AySL+1ev4=" crossorigin="anonymous"></script>
 
 <!-- Flatly Theme - Light  -->
-<link rel="stylesheet" href="https://bootswatch.com/3/flatly/bootstrap.css" media="(prefers-color-scheme: light), (prefers-color-scheme: no-preference)">
+<link id="css-light" rel="stylesheet" href="https://bootswatch.com/3/flatly/bootstrap.css" media="(prefers-color-scheme: light), (prefers-color-scheme: no-preference)">
 
 <!-- Darkly Theme - Dark -->
-<link rel="stylesheet" href="https://bootswatch.com/3/darkly/bootstrap.css" media="(prefers-color-scheme: dark)">
+<link id="css-dark" rel="stylesheet" href="https://bootswatch.com/3/darkly/bootstrap.css" media="(prefers-color-scheme: dark)">
 
 <!-- preferably CSS -->
 <link rel="stylesheet" href="../preferably.css">
+<link id="css-code-light" rel="stylesheet" href="../code-color-scheme-light.css" media="(prefers-color-scheme: light), (prefers-color-scheme: no-preference)">
+<link id="css-code-dark" rel="stylesheet" href="../code-color-scheme-dark.css" media="(prefers-color-scheme: dark)">
+
+
+<script src="../darkswitch.js"></script>
+
 
 <!-- bootstrap-toc -->
 <link rel="stylesheet" href="../bootstrap-toc.css">
@@ -122,6 +129,13 @@
 </li>
       </ul>
       <ul class="nav navbar-nav navbar-right">
+        
+        <li>
+          <a href="#" id="css-toggle-btn">
+            <span class="fas fa-adjust fa-lg"></span>
+          </a>
+        </li>
+        
         <li>
   <a href="https://github.com/amirmasoudabdol/preferably/">
     <span class="fab fa fab fa-github fa-lg"></span>
@@ -182,8 +196,9 @@ dui ut ornare lectus. In est ante in nibh. Eu sem integer vitae justo eget.
 Massa placerat duis ultricies lacus sed turpis. Etiam sit amet nisl purus
 in mollis nunc sed id. Porta non pulvinar neque laoreet suspendisse interdum
 consectetur. Risus at ultrices mi tempus imperdiet nulla malesuada
-pellentesque.</p>
-<p>## Heading 2a</p>
+pellentesque.</p><h3 class='hasAnchor' id='arguments'><a class='anchor' href='#arguments'></a>Heading 2a</h3>
+
+
 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
 tempor incididunt ut labore et dolore magna aliqua. Turpis massa tincidunt
 dui ut ornare lectus. In est ante in nibh. Eu sem integer vitae justo eget.
@@ -205,7 +220,10 @@ consequat. Duis aute irure dolor in reprehenderit in voluptate velit
 esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
 cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id
 est laborum.</p>
-<p>## Heading 2b</p>
+
+<h3 class='hasAnchor' id='arguments'><a class='anchor' href='#arguments'></a>Heading 2b</h3>
+
+
 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
 tempor incididunt ut labore et dolore magna aliqua. Turpis massa tincidunt
 dui ut ornare lectus. In est ante in nibh. Eu sem integer vitae justo eget.
@@ -227,6 +245,7 @@ Massa placerat duis ultricies lacus sed turpis. Etiam sit amet nisl purus
 in mollis nunc sed id. Porta non pulvinar neque laoreet suspendisse interdum
 consectetur. Risus at ultrices mi tempus imperdiet nulla malesuada
 pellentesque.</p>
+
 
   </div>
   <div class="col-md-3 hidden-xs hidden-sm" id="pkgdown-sidebar">
