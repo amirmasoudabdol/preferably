@@ -1,47 +1,61 @@
-// you can use app's unique identifier here
-const LOCAL_STORAGE_KEY = "toggle-bootstrap-theme";
+$(document).ready(function(){
 
-const LOCAL_META_DATA = JSON.parse(localStorage.getItem(LOCAL_STORAGE_KEY));
-
-// you can change this url as needed
-const LIGHT_THEME_PATH = "https://bootswatch.com/3/faltly/bootstrap.css";
-const DARK_THEME_PATH = "https://bootswatch.com/3/darkly/bootstrap.css";
-
-const DARK_STYLE_LINK = document.getElementById("dark-theme-style");
-const THEME_TOGGLER = document.getElementById("theme-toggler");
-
-let isDark = LOCAL_META_DATA && LOCAL_META_DATA.isDark;
-
-// check if user has already selected dark theme earlier
-if (isDark) {
-  enableDarkTheme();
-} else {
-  disableDarkTheme();
-}
-
-
-/**
- * Apart from toggling themes, this will also store user's theme preference in local storage.
- * So when user visits next time, we can load the same theme.
- *
- */
-function toggleTheme() {
-  isDark = !isDark;
-  if (isDark) {
-    enableDarkTheme();
-  } else {
-    disableDarkTheme();
+  // Update the toggle button based on current color scheme
+  function updateDarkToggleButton() {
+    $dark = (window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches);
+    $("#css-toggle-btn").prop( "checked", $dark );
   }
-  const META = { isDark };
-  localStorage.setItem(LOCAL_STORAGE_KEY, JSON.stringify(META));
-}
+  // Update on first load.
+  updateDarkToggleButton();
+  // and every time it changes
+  if (window.matchMedia) window.matchMedia("(prefers-color-scheme: dark)").addListener( updateDarkToggleButton );
 
-function enableDarkTheme() {
-  DARK_STYLE_LINK.setAttribute("href", DARK_THEME_PATH);
-  THEME_TOGGLER.innerHTML = "🌙 Dark";
-}
+  // Color Scheme toggle botton
 
-function disableDarkTheme() {
-  DARK_STYLE_LINK.setAttribute("href", LIGHT_THEME_PATH);
-  THEME_TOGGLER.innerHTML = "🌞 Light";
-}
+  // function to initialise the css
+  function init_color_scheme_css($id, $mode) {
+    if ($("#"+$id)) $("#"+$id).remove();  // remove exitsing id
+    $("#"+$id+"-"+$mode).attr( {
+      "data-href-light": $("#"+$id+"-light").attr("href"),  // store the light CSS url
+      "data-href-dark": $("#"+$id+"-dark").attr("href"), // store the dark CSS url
+      "data-color-scheme": $mode,  // store the mode, so that we don't re-initalise
+      "media": "all",  // drop the media filter
+      "id": $id  // rename the id (drop the `-{mode}` bit)
+    } );
+    $other = ($mode == 'dark') ? 'light' : 'dark';
+    $("#"+$id+"-"+$other).remove();
+  }
+
+  // function to toggle the CSS
+  function toggle_color_scheme_css($id, $mode) {
+    // grab the new mode css href
+    $href = $("#"+$id).data("href-"+$mode);  // use `.data()` here, leverage the cache
+    // set the CSS to the mode preference.
+    $("#"+$id).attr( {
+      "href": $href,
+      "data-color-scheme": $mode,
+    });
+  }
+
+  // toggle button click code
+  $("#css-toggle-btn").bind("click", function() {
+    // get current mode
+    // don't use `.data("color-scheme")`, it doesn't refresh
+    $mode = $("#css").attr("data-color-scheme");
+    // test if this is a first time click event, if so initialise the code
+    if (typeof $mode === 'undefined') {
+      // not defined yet - set pref. & ask the browser if alt. is active
+      $mode = 'light';
+      if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) $mode = 'dark';
+      init_color_scheme_css("css", $mode);
+      init_color_scheme_css("css-code", $mode);
+      // `init_color_scheme_css()` any other CSS
+    }
+    // by here we have the current mode, so swap it
+    $new_mode = ($mode == 'dark') ? 'light' : 'dark';
+    toggle_color_scheme_css("css", $new_mode);
+    toggle_color_scheme_css("css-code", $new_mode);
+    // `toggle_color_scheme_css()` any other CSS
+  });
+
+});
