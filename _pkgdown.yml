@@ -20,8 +20,8 @@ repo:
 template:
   package: preferably
   params:
-    customanalytics:
+    canalytics:
       domain: preferably.amirmasoudabdol.name
       src: https://stats.preferably.amirmasoudabdol.name/js/index.js
-    switch: manual
+    toggle: manual
   default_assets: false
