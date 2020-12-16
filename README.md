@@ -1,12 +1,16 @@
 # preferably <img src="man/figures/logo.png" width="20%" align="right"/>
 
-preferably is a pkgdown template. preferably uses two bootstrap themes, [Darkly](https://bootswatch.com/darkly/) and [Flatly](https://bootswatch.com/flatly/) and utilizes the [prefers-color-scheme](`https://developer.mozilla.org/en-US/docs/Web/CSS/@media/prefers-color-scheme`) variable to serve either of the themes based on users system's color theme.
+`preferably` is a [pkgdown](https://pkgdown.r-lib.org/) template. `preferably` uses two bootstrap themes, [Flatly](https://bootswatch.com/flatly/) and [Darkly](https://bootswatch.com/darkly/) and utilizes the [`prefers-color-scheme`](https://developer.mozilla.org/en-US/docs/Web/CSS/@media/prefers-color-scheme) variable to serve either of the themes based on user’s operating system setting.
+
+![](man/figures/comparison.png)
 
 ## Introduction
 
-As modern OSes are offering system-wide dark mode, browsers are providing mechanism to detect system-wide color scheme and react to it. Websites can take advantages of these mechanism and deliver a customized page to their visitors that matches their preferences. 
+As most modern operation systems are offering system-wide dark mode, internet browsers are providing mechanism to detect user's system-wide color scheme. Therefore, it is possible for a website to advantages of these mechanism and automatically deliver a customized version of the website that matches user's operating system preference. 
 
-Preferably brings these advancement and customizations to pkgdown by delivering a light theme when users setting is in light mode, and delivering dark theme when users is adapting a dark mode. Moreover, [if supported](https://support.apple.com/en-us/HT208976), a light theme can be delivered during the day, and a dark theme during the night. 
+`preferably` brings these advancement and customization to [pkgdown](https://pkgdown.r-lib.org/) by delivering a light theme when user's setting is set to *light mode*, and delivering dark theme when it is set to *dark mode*.
+
+On [macOS](https://support.apple.com/en-us/HT208976), if automatic appearance is selected, a light theme will be delivered during the day time, and automatically changes to dark theme during the night time, and vice versa.
 
 ## Installation
 
@@ -30,13 +34,13 @@ In addition of pkgdown customizations, Preferably offers a few more options as l
 
 ### Custom Analytic
 
-Preferably allows for adding a custom tracker (in addition to `ganalytics`) to your website via the `customanalytic` option.
+Preferably allows for adding a custom analytics (in addition to `ganalytics`) to your website via the `canalytic` option.
 
 ```YAML
 template:
   package: preferably
   params:
-    customanalytic:
+    canalytic:
       domain: example.com
       src: https://example.com/tracker.js
   default_assets: false
@@ -52,4 +56,12 @@ In case this setting doesn’t satisfy your need or you have a better idea on ho
 
 ### Light/Dark Switch
 
-To be implemented
+In addition to the automatic color scheme switching, you can add a switch to maunally toggle between light and dark themes. This can be done by setting the `toggle` option to `manual`.
+
+```YAML
+  package: preferably
+  params:
+    toggle: manual
+```
+
+In order to remove the toggle button, remove the `toggle` parameters entirely.

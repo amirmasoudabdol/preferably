@@ -1,7 +1,7 @@
 Package: preferably
 Type: Package
 Title: preferably `pkgdown` template
-Version: 0.1.0
+Version: 0.2.0
 Author: person("Amir M.", "Abdol", emal = "amirmasoudabdol@icloud.com", role = c("aut", "cre"))
 Maintainer: Amir Masoud Abdol <amirmasoudabdol@icloud.com>
 Description: Preferably is an accessible template for `pkgdown` package. 
