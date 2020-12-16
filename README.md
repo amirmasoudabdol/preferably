@@ -1,3 +1,7 @@
+<!-- badges: start -->
+[![Travis build status](https://travis-ci.com/amirmasoudabdol/preferably.svg?branch=main)](https://travis-ci.com/amirmasoudabdol/preferably)
+<!-- badges: end -->
+
 # preferably <img src="man/figures/logo.png" width="20%" align="right"/>
 
 `preferably` is a [pkgdown](https://pkgdown.r-lib.org/) template. `preferably` uses two bootstrap themes, [Flatly](https://bootswatch.com/flatly/) and [Darkly](https://bootswatch.com/darkly/) and utilizes the [`prefers-color-scheme`](https://developer.mozilla.org/en-US/docs/Web/CSS/@media/prefers-color-scheme) variable to serve either of the themes based on user’s operating system setting.
