@@ -2,7 +2,7 @@ Package: preferably
 Type: Package
 Title: preferably `pkgdown` template
 Version: 0.2.0
-Author: person("Amir M.", "Abdol", emal = "amirmasoudabdol@icloud.com", role = c("aut", "cre"))
+Authors@R: person(given = "Amir Masoud", family = "Abdol", role = c("aut","cre"), email = "amirmasoudabdol@icloud.com")
 Maintainer: Amir Masoud Abdol <amirmasoudabdol@icloud.com>
 Description: Preferably is an accessible template for `pkgdown` package. 
 License: MIT + file LICENSE
