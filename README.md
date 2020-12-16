@@ -30,7 +30,7 @@ template:
 
 ## Customization
 
-In addition of pkgdown customizations, Preferably offers a few more options as listed here.  
+In addition of pkgdown customization, Preferably offers a few more options as listed here.  
 
 ### Custom Analytic
 
@@ -52,11 +52,11 @@ Setting these command will generate the following line in the HTML:
 <script async defer data-domain="example.com" src="https://example.com/tracker.js"></script>
 ```
 
-In case this setting doesn’t satisfy your need or you have a better idea on how to implement this, please reach out on [GitHub](https://github.com/amirmasoudabdol/preferably/issues/)
+In case this setting does not satisfy your need or you have a better idea on how to implement this, please reach out on [GitHub](https://github.com/amirmasoudabdol/preferably/issues/)
 
 ### Light/Dark Switch
 
-In addition to the automatic color scheme switching, you can add a switch to maunally toggle between light and dark themes. This can be done by setting the `toggle` option to `manual`.
+In addition to the automatic color scheme switching, you can add a switch to manually toggle between light and dark themes. This can be done by setting the `toggle` option to `manual`.
 
 ```YAML
   package: preferably
