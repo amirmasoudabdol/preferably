@@ -1,32 +1,32 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
-<svg xmlns:dc="http://purl.org/dc/elements/1.1/" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xl="http://www.w3.org/1999/xlink" viewBox="580.5721 496.3987 181.50433 207.9785" width="181.50433" height="207.9785">
+<svg xmlns:dc="http://purl.org/dc/elements/1.1/" version="1.1" xmlns:xl="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" viewBox="638 721.5 385.3379 444" width="385.3379" height="444">
   <defs>
-    <font-face font-family="Nitti" font-size="27" panose-1="2 11 8 9 4 0 0 13 0 4" units-per-em="1000" underline-position="-105" underline-thickness="80" slope="-407.4074" x-height="447" cap-height="579" ascent="936.0019" descent="-264.00054" font-style="italic" font-weight="700">
+    <font-face font-family="Nitti" font-size="54" panose-1="2 11 8 9 4 0 0 13 0 4" units-per-em="1000" underline-position="-105" underline-thickness="80" slope="-203.7037" x-height="447" cap-height="579" ascent="936.0019" descent="-264.00054" font-style="italic" font-weight="700">
       <font-face-src>
         <font-face-name name="Nitti-BoldItalic"/>
       </font-face-src>
     </font-face>
   </defs>
-  <metadata> Produced by OmniGraffle 7.18.1\n2020-12-15 21:25:44 +0000</metadata>
-  <g id="Canvas_1" fill="none" fill-opacity="1" stroke="none" stroke-opacity="1" stroke-dasharray="none">
+  <metadata> Produced by OmniGraffle 7.18.1\n2020-12-17 11:11:20 +0000</metadata>
+  <g id="Canvas_1" fill-opacity="1" stroke-opacity="1" stroke-dasharray="none" stroke="none" fill="none">
     <title>Canvas 1</title>
     <g id="Canvas_1_Layer_1">
       <title>Layer 1</title>
-      <g id="Graphic_30">
-        <path d="M 623.7679 677.7292 L 668.8163 703.838 C 670.0569 704.5569 671.5873 704.5569 672.8279 703.838 L 759.0779 653.85 C 760.3122 653.1346 761.0721 651.8159 761.0721 650.3892 L 761.0721 550.38665 C 761.0721 548.95997 760.3122 547.6413 759.0779 546.9259 L 714.4224 521.0449 Z" fill="#222"/>
+      <g id="Graphic_48">
+        <path d="M 730.216 1108.611 L 826.387 1164.3488 C 829.0353 1165.8837 832.3026 1165.8837 834.9509 1164.3488 L 1019.0805 1057.6327 C 1021.7157 1056.1055 1023.3379 1053.2903 1023.3379 1050.2445 L 1023.3379 836.7555 C 1023.3379 833.7097 1021.7157 830.8945 1019.0805 829.3673 L 923.7484 774.1156 Z" fill="#222"/>
       </g>
-      <g id="Graphic_29">
-        <path d="M 625.6904 678.8434 L 716.3449 522.1591 L 672.8279 496.9379 C 671.5873 496.21894 670.0569 496.21894 668.8163 496.9379 L 582.56634 546.9259 C 581.332 547.6413 580.5721 548.95997 580.5721 550.38665 L 580.5721 650.3892 C 580.5721 651.8159 581.332 653.1346 582.56634 653.85 Z" fill="white"/>
+      <g id="Graphic_47">
+        <path d="M 734.3201 1110.9896 L 927.8526 776.49425 L 834.9509 722.6512 C 832.3026 721.1163 829.0353 721.1163 826.387 722.6512 L 642.2574 829.3673 C 639.6222 830.8945 638 833.7097 638 836.7555 L 638 1050.2445 C 638 1053.2903 639.6222 1056.1055 642.2574 1057.6327 Z" fill="white"/>
       </g>
-      <g id="Graphic_32">
-        <text transform="translate(580.5721 582.2)" fill="#141414">
-          <tspan font-family="Nitti" font-size="27" font-style="italic" font-weight="700" fill="#141414" x="1.8793716" y="25">prefe</tspan>
+      <g id="Graphic_46">
+        <text transform="translate(638 906.3291)" fill="#141414">
+          <tspan font-family="Nitti" font-size="54" font-style="italic" font-weight="700" fill="#141414" x="12.593811" y="51">prefe</tspan>
         </text>
       </g>
-      <g id="Graphic_31">
-        <text transform="translate(670.83085 582.2)" fill="#fafafa">
-          <tspan font-family="Nitti" font-size="27" font-style="italic" font-weight="700" fill="#fafafa" x="2.622795" y="25">rably</tspan>
+      <g id="Graphic_45">
+        <text transform="translate(835.5255 906.3291)" fill="#fafafa">
+          <tspan font-family="Nitti" font-size="54" font-style="italic" font-weight="700" fill="#fafafa" x="10.406189" y="51">rably</tspan>
         </text>
       </g>
     </g>
