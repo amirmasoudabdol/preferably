@@ -4,17 +4,11 @@
 
 # preferably <img src="man/figures/logo.png" width="20%" align="right"/>
 
-`preferably` is a [pkgdown](https://pkgdown.r-lib.org/) template. `preferably` uses two bootstrap themes, [Flatly](https://bootswatch.com/flatly/) and [Darkly](https://bootswatch.com/darkly/) and utilizes the [`prefers-color-scheme`](https://developer.mozilla.org/en-US/docs/Web/CSS/@media/prefers-color-scheme) variable to serve either of the themes based on user’s operating system setting.
+preferably is an **accessible** template for [pkgdown](https://pkgdown.r-lib.org/). It uses two bootstrap themes, [Flatly](https://bootswatch.com/flatly/) and [Darkly](https://bootswatch.com/darkly/) and utilizes the [`prefers-color-scheme`](https://developer.mozilla.org/en-US/docs/Web/CSS/@media/prefers-color-scheme) CSS variable to automatically serve either of the two based on user’s operating system setting, or allowing them to manually toggle between them.
+
+Besides offering light and dark mode, I have spent some time to make the overall reading experience of reading documents just a bit nicer, by using richer fonts, adopting a better color scheme for codes, etc. 
 
 ![](man/figures/comparison.png)
-
-## Introduction
-
-As most modern operation systems are offering system-wide dark mode, internet browsers are providing mechanism to detect user's system-wide color scheme. Therefore, it is possible for a website to advantages of these mechanism and automatically deliver a customized version of the website that matches user's operating system preference. 
-
-`preferably` brings these advancement and customization to [pkgdown](https://pkgdown.r-lib.org/) by delivering a light theme when user's setting is set to *light mode*, and delivering dark theme when it is set to *dark mode*.
-
-On [macOS](https://support.apple.com/en-us/HT208976), if automatic appearance is selected, a light theme will be delivered during the day time, and automatically changes to dark theme during the night time, and vice versa.
 
 ## Installation
 

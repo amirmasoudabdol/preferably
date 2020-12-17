@@ -5,3 +5,5 @@
 ^pkgdown$
 ^logo.*$
 ^\.travis\.yml$
+^\.\.Rcheck$
+^\.github$
