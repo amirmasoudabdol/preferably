@@ -1,17 +1,22 @@
-Package: preferably
 Type: Package
+Package: preferably
 Title: A 'pkgdown' Template
 Version: 0.2.0
-Authors@R: person(given = "Amir Masoud", family = "Abdol", role = c("aut","cre"), email = "i@amirmasoudabdol.name")
+Authors@R: 
+    person(given = "Amir Masoud",
+           family = "Abdol",
+           role = c("aut", "cre"),
+           email = "i@amirmasoudabdol.name")
 Maintainer: Amir Masoud Abdol <i@amirmasoudabdol.name>
-Description: This is a 'pkgdown' template. 'preferably' uses two bootstrap themes, Flatly and Darkly and utilizes the 'prefers-color-scheme' variable to serve either of the themes based on user’s operating system setting.
+Description: This is a 'pkgdown' template. 'preferably' uses two
+    bootstrap themes, Flatly and Darkly and utilizes the
+    'prefers-color-scheme' variable to serve either of the themes based on
+    user’s operating system setting.
 License: MIT + file LICENSE
+URL: https://preferably.amirmasoudabdol.name
+BugReports: https://github.com/amirmasoudabdol/preferably/issues
+Depends:
+    R (>= 3.4.0)
 Encoding: UTF-8
 LazyData: true
 RoxygenNote: 7.1.1
-Depends:
-    R (>= 3.4.0)
-Imports:
-    pkgdown (>= 1.6.0)
-BugReports: https://github.com/amirmasoudabdol/preferably/issues
-URL: https://preferably.amirmasoudabdol.name
