@@ -8,10 +8,11 @@ Authors@R:
            role = c("aut", "cre"),
            email = "i@amirmasoudabdol.name")
 Maintainer: Amir Masoud Abdol <i@amirmasoudabdol.name>
-Description: This is a 'pkgdown' template. 'preferably' uses two
-    bootstrap themes, Flatly and Darkly and utilizes the
-    'prefers-color-scheme' variable to serve either of the themes based on
-    user’s operating system setting.
+Description: This is an accessible template for 'pkgdown'. It
+    uses two bootstrap themes, Flatly and Darkly and utilizes the
+    'prefers-color-scheme' CSS variable to automatically serve either of
+    the two based on user’s operating system setting, or allowing them to
+    manually toggle between them.
 License: MIT + file LICENSE
 URL: https://preferably.amirmasoudabdol.name
 BugReports: https://github.com/amirmasoudabdol/preferably/issues
