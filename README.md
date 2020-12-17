@@ -1,8 +1,8 @@
-# preferably <img src="man/figures/logo.png" width="20%" align="right"/>
+# preferably <img src="man/figures/logo.png" width="120" align="right"/>
 
 preferably is an **accessible** template for [pkgdown](https://pkgdown.r-lib.org/). It uses two bootstrap themes, [Flatly](https://bootswatch.com/flatly/) and [Darkly](https://bootswatch.com/darkly/) and utilizes the [`prefers-color-scheme`](https://developer.mozilla.org/en-US/docs/Web/CSS/@media/prefers-color-scheme) CSS variable to automatically serve either of the two based on user’s operating system setting, or allowing them to manually toggle between them.
 
-Besides offering light and dark mode, I have spent some time to make the overall reading experience of reading documents just a bit nicer, by using richer fonts, adopting a better color scheme for codes, etc. 
+Besides offering light and dark mode, I have spent some time to make the overall reading experience of pkgdown documentations just a bit nicer, by using richer fonts, adopting a better color scheme for codes, etc. 
 
 ![](man/figures/comparison.png)
 
@@ -50,7 +50,7 @@ In case this setting does not satisfy your need or you have a better idea on how
 
 ### Light/Dark Switch
 
-In addition to the automatic color scheme switching, you can add a switch to manually toggle between light and dark themes. This can be done by setting the `toggle` option to `manual`.
+In addition to the automatic color scheme switching, you can add a switch to the menu bar, e.g, <span class="fas fa-adjust fa"></span>, to allow for manual selection between light and dark themes. This can be done by setting the `toggle` option to `manual`.
 
 ```YAML
   package: preferably

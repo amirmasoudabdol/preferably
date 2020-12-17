@@ -25,3 +25,10 @@ template:
       src: https://stats.preferably.amirmasoudabdol.name/js/index.js
     toggle: manual
   default_assets: false
+  opengraph:
+    image:
+      src: man/figures/logo.png
+    twitter:
+      creator: "@amirmasoudabdol"
+      site: https://amirmasoudabdol.name
+      card: man/figures/summary-card.png
