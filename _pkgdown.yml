@@ -1,7 +1,8 @@
 url: https://preferably.amirmasoudabdol.name
 
 home:
-  title: A 'pkgdown' Template
+  title: preferably - a 'pkgdown' template
+  description: An accessible template for pkgdown websites with dynamic light/dark mode support
 
 authors:
   Amir Masoud Abdol:
