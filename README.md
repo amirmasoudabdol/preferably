@@ -1,8 +1,8 @@
 # preferably <img src="man/figures/logo.png" width="120" align="right"/>
 
-preferably is an **accessible** template for [pkgdown](https://pkgdown.r-lib.org/). It uses two bootstrap themes, [Flatly](https://bootswatch.com/flatly/) and [Darkly](https://bootswatch.com/darkly/) and utilizes the [`prefers-color-scheme`](https://developer.mozilla.org/en-US/docs/Web/CSS/@media/prefers-color-scheme) CSS variable to automatically serve either of the two based on user’s operating system setting, or allowing them to manually toggle between them.
+preferably is an **accessible** template for [pkgdown](https://pkgdown.r-lib.org/). It uses a [light](https://bootswatch.com/flatly/) and a [dark](https://bootswatch.com/darkly/) theme and utilizes the [`prefers-color-scheme`](https://developer.mozilla.org/en-US/docs/Web/CSS/@media/prefers-color-scheme) CSS variable to *automatically* serve either of the two based on user’s operating system setting, or allowing them to manually toggle between them.
 
-Besides offering light and dark mode, I have spent some time to make the overall reading experience of pkgdown documentations just a bit nicer, by using richer fonts, adopting a better color scheme for codes, etc. 
+Besides offering light and dark mode, I have spent some time making the overall reading experience of pkgdown documentations just a bit nicer, by using richer fonts, adopting a better color scheme for codes, etc. 
 
 ![](man/figures/comparison.png)
 
@@ -46,7 +46,7 @@ Setting these command will generate the following line in the HTML:
 <script async defer data-domain="example.com" src="https://example.com/tracker.js"></script>
 ```
 
-In case this setting does not satisfy your need or you have a better idea on how to implement this, please reach out on [GitHub](https://github.com/amirmasoudabdol/preferably/issues/)
+In case this setting does not satisfy your need or you have a better idea on how to implement this, please reach out on [GitHub](https://github.com/amirmasoudabdol/preferably/issues/).
 
 ### Light/Dark Switch
 
