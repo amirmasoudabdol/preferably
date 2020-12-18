@@ -16,6 +16,8 @@ devtools::install_github("amirmasoudabdol/preferably")
 
 ## Usage
 
+After the successful installation, you need to prepare your `_pkgdown.yml` config file:
+
 ```YAML
 template:
   package: preferably
@@ -33,11 +35,11 @@ Preferably allows for adding a custom analytics (in addition to `ganalytics`) to
 ```YAML
 template:
   package: preferably
+  default_assets: false
   params:
     canalytic:
       domain: example.com
       src: https://example.com/tracker.js
-  default_assets: false
 ```
 
 Setting these command will generate the following line in the HTML:
@@ -53,7 +55,9 @@ In case this setting does not satisfy your need or you have a better idea on how
 In addition to the automatic color scheme switching, you can add a switch to the menu bar, e.g, <span class="fas fa-adjust fa"></span>, to allow for manual selection between light and dark themes. This can be done by setting the `toggle` option to `manual`.
 
 ```YAML
+template:
   package: preferably
+  default_assets: false  
   params:
     toggle: manual
 ```
