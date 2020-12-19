@@ -21,8 +21,9 @@ After the successful installation, you need to prepare your `_pkgdown.yml` confi
 ```YAML
 template:
   package: preferably
-  default_assets: false
 ```
+
+> ⚠️ *Keep in mind that you should NOT use `default_assets: false` when you change the default template. 'preferably' relies on some of the 'pkgdown' assets and templates.*
 
 ## Customization
 
@@ -35,7 +36,6 @@ Preferably allows for adding a custom analytics (in addition to `ganalytics`) to
 ```YAML
 template:
   package: preferably
-  default_assets: false
   params:
     canalytic:
       domain: example.com
@@ -57,7 +57,6 @@ In addition to the automatic color scheme switching, you can add a switch to the
 ```YAML
 template:
   package: preferably
-  default_assets: false  
   params:
     toggle: manual
 ```

@@ -17,6 +17,7 @@ repo:
     source: https://github.com/amirmasoudabdol/preferably/blob/main/
     issue: https://github.com/amirmasoudabdol/preferably/issues/
     user: https://github.com/amirmasoudabdol/
+  branch: main
 
 template:
   package: preferably
@@ -25,7 +26,6 @@ template:
       domain: preferably.amirmasoudabdol.name
       src: https://stats.preferably.amirmasoudabdol.name/js/index.js
     toggle: manual
-  default_assets: false
   opengraph:
     image:
       src: man/figures/twitter-summary-card.png
