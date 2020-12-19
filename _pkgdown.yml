@@ -28,10 +28,9 @@ template:
   default_assets: false
   opengraph:
     image:
-      src: man/figures/logo.png
+      src: man/figures/twitter-summary-card.png
       alt: An accessible template for pkgdown websites with dynamic light/dark mode support
     twitter:
       creator: "@amirmasoudabdol"
       site: https://amirmasoudabdol.name
       card: summary_large_image
-      src: https://preferably.amirmasoudabdol.name/reference/figures/twitter-summary-card.png
