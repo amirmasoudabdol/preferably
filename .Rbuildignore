@@ -7,3 +7,6 @@
 ^\.travis\.yml$
 ^\.\.Rcheck$
 ^\.github$
+^\.DS_Store$
+^inst/\.DS_Store$
+^inst/pkgdown/\.DS_Store$
