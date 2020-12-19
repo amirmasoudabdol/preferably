@@ -1,8 +1,8 @@
 # preferably <img src="man/figures/logo.png" width="120" align="right"/>
 
-preferably is an **accessible** template for [pkgdown](https://pkgdown.r-lib.org/). It uses a [light](https://bootswatch.com/flatly/) and a [dark](https://bootswatch.com/darkly/) theme and utilizes the [`prefers-color-scheme`](https://developer.mozilla.org/en-US/docs/Web/CSS/@media/prefers-color-scheme) CSS variable to *automatically* serve either of the two based on user’s operating system setting, or allowing them to manually toggle between them.
+preferably is an **accessible** template for [pkgdown](https://pkgdown.r-lib.org/) documentation websites. It uses a [light](https://bootswatch.com/flatly/) and a [dark](https://bootswatch.com/darkly/) theme and utilizes the [`prefers-color-scheme`](https://developer.mozilla.org/en-US/docs/Web/CSS/@media/prefers-color-scheme) CSS variable to *automatically* serve either of the two based on user’s operating system setting, or allowing them to manually toggle between them.
 
-Besides offering light and dark mode, I have spent some time making the overall reading experience of pkgdown documentations just a bit nicer, by using richer fonts, adopting a better color scheme for codes, etc. 
+Besides offering light and dark mode, I spent some time making the overall reading experience of pkgdown documentations just a bit nicer, by using richer fonts, adopting a better color scheme for codes, etc. 
 
 ![](man/figures/comparison.png)
 
@@ -61,4 +61,26 @@ template:
     toggle: manual
 ```
 
-In order to remove the toggle button, remove the `toggle` parameters entirely.
+In order to remove the toggle button, remove the `toggle` parameters.
+
+- - -
+
+## Misc.
+
+#### Goal
+
+The goal of `preferably` is to improve the accessibility and readability of your documentation websites.
+
+#### Future Plan
+
+My main focus is to keep `preferably` compatible with `pkgdown`. Besides, I have a short list of features that I would like to add to the template, and `pkgdown` package. For those, I prefer to prepare a few pull requests and add them to `pkgdown` instead of diverging the `preferably` from its core. Let's see when I get to them! 😅
+
+#### Contribution
+
+If you found any bugs, or have any suggestions, please feel free to reach out to me, either by either opening an [issue](https://github.com/amirmasoudabdol/preferably/issues/) or even a pull request, or even writing an email. 
+
+#### Support
+
+Please let me know if you happen to use `preferably`. I think I will soon start promoting and making a list of your websites! 
+
+Lastly, I quite like [ko-fi](https://ko-fi.com/C0C47DMK)! 😋
