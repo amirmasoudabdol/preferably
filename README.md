@@ -16,14 +16,33 @@ devtools::install_github("amirmasoudabdol/preferably")
 
 ## Usage
 
-After the successful installation, you need to prepare your `_pkgdown.yml` config file:
+After the successful installation, if you already have your pkgdown setup ready, you only need to specify the `template` parameter as follow. Then, as before, you can build your site using `build_site()` and deploy it manually using `deploy_on_branch()`.
 
 ```YAML
 template:
   package: preferably
 ```
 
-> ⚠️ *Keep in mind that you should NOT use `default_assets: false` when you change the default template. 'preferably' relies on some of the 'pkgdown' assets and templates.*
+> ⚠️ Keep in mind that you should NOT use `default_assets: false` when you change the default template. 'preferably' relies on some of the 'pkgdown' assets and templates.
+
+### Integeration
+
+In the case that you are using CI systems to build and deploy your website, you need to make sure that 'preferably' is available on the enviroment. For [GitHub Action](https://pkgdown.r-lib.org/articles/pkgdown.html?q=github%20action#publishing), add the following line to the "Install dependencies" section of your `.github/workflows/pkgdown.yaml` file:
+
+```YAML
+- name: Install dependencies
+  run: |
+    # ⚠️ leave other commands intact, 
+    # and add the following command to the end of the list 👇🏼
+    remotes::install_github("amirmasoudabdol/preferably", type = "source")
+```
+
+If you are using Travis-CI, add the following line to your `.travis.yml` file:
+
+```YAML
+r_github_packages:
+  - amirmasoudabdol/preferably
+```
 
 ## Customization
 
