@@ -66,6 +66,12 @@
     <div id="navbar" class="navbar-collapse collapse">
       <ul class="nav navbar-nav">
 <li>
+  <a href="index.html">
+    <span class="fas fa-home fa-lg"></span>
+     
+  </a>
+</li>
+<li>
   <a href="reference/index.html">Reference</a>
 </li>
 <li>
@@ -101,23 +107,23 @@
 <div class="page-header"><h1 class="hasAnchor">
 <a href="#preferably-" class="anchor"></a>preferably <img src="reference/figures/logo.png" width="120" align="right">
 </h1></div>
-<p>preferably is an <strong>accessible</strong> template for <a href="https://pkgdown.r-lib.org/">pkgdown</a>. It uses a <a href="https://bootswatch.com/flatly/">light</a> and a <a href="https://bootswatch.com/darkly/">dark</a> theme and utilizes the <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/@media/prefers-color-scheme"><code>prefers-color-scheme</code></a> CSS variable to <em>automatically</em> serve either of the two based on user’s operating system setting, or allowing them to manually toggle between them.</p>
-<p>Besides offering light and dark mode, I have spent some time making the overall reading experience of pkgdown documentations just a bit nicer, by using richer fonts, adopting a better color scheme for codes, etc.</p>
+<p>preferably is an <strong>accessible</strong> template for <a href="https://pkgdown.r-lib.org/">pkgdown</a> documentation websites. It uses a <a href="https://bootswatch.com/flatly/">light</a> and a <a href="https://bootswatch.com/darkly/">dark</a> theme and utilizes the <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/@media/prefers-color-scheme"><code>prefers-color-scheme</code></a> CSS variable to <em>automatically</em> serve either of the two based on user’s operating system setting, or allowing them to manually toggle between them.</p>
+<p>Besides offering light and dark mode, I spent some time making the overall reading experience of pkgdown documentations just a bit nicer, by using richer fonts, adopting a better color scheme for codes, etc.</p>
 <p><img src="reference/figures/comparison.png"></p>
 <div id="installation" class="section level2">
 <h2 class="hasAnchor">
 <a href="#installation" class="anchor"></a>Installation</h2>
 <div class="sourceCode" id="cb1"><pre class="downlit sourceCode r">
-<code class="sourceCode R"><span class="fu"><a href="https://rdrr.io/r/utils/install.packages.html">install.packages</a></span><span class="op">(</span><span class="st">"devtools"</span><span class="op">)</span>; <span class="kw"><a href="https://rdrr.io/r/base/library.html">library</a></span><span class="op">(</span><span class="va"><a href="https://devtools.r-lib.org/">devtools</a></span><span class="op">)</span>
+<code class="sourceCode R"><span class="fu"><a href="https://rdrr.io/r/utils/install.packages.html">install.packages</a></span><span class="op">(</span><span class="st">"devtools"</span><span class="op">)</span>; <span class="kw"><a href="https://rdrr.io/r/base/library.html">library</a></span><span class="op">(</span><span class="va">devtools</span><span class="op">)</span>
 
-<span class="fu">devtools</span><span class="fu">::</span><span class="fu"><a href="https://devtools.r-lib.org//reference/remote-reexports.html">install_github</a></span><span class="op">(</span><span class="st">"amirmasoudabdol/preferably"</span><span class="op">)</span></code></pre></div>
+<span class="fu">devtools</span><span class="fu">::</span><span class="fu">install_github</span><span class="op">(</span><span class="st">"amirmasoudabdol/preferably"</span><span class="op">)</span></code></pre></div>
 </div>
 <div id="usage" class="section level2">
 <h2 class="hasAnchor">
 <a href="#usage" class="anchor"></a>Usage</h2>
 <p>After the successful installation, you need to prepare your <code>_pkgdown.yml</code> config file:</p>
-<div class="sourceCode" id="cb2"><pre class="sourceCode yaml"><code class="sourceCode yaml"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="fu">template</span><span class="kw">:</span></span>
-<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a><span class="at">  </span><span class="fu">package</span><span class="kw">:</span><span class="at"> preferably</span></span></code></pre></div>
+<div class="sourceCode" id="cb2"><pre class="sourceCode yaml"><code class="sourceCode yaml"><span id="cb2-1"><a href="#cb2-1"></a><span class="fu">template</span><span class="kw">:</span></span>
+<span id="cb2-2"><a href="#cb2-2"></a><span class="at">  </span><span class="fu">package</span><span class="kw">:</span><span class="at"> preferably</span></span></code></pre></div>
 <blockquote>
 <p>⚠️ <em>Keep in mind that you should NOT use <code>default_assets: false</code> when you change the default template. ‘preferably’ relies on some of the ‘pkgdown’ assets and templates.</em></p>
 </blockquote>
@@ -130,25 +136,51 @@
 <h3 class="hasAnchor">
 <a href="#custom-analytic" class="anchor"></a>Custom Analytic</h3>
 <p>Preferably allows for adding a custom analytics (in addition to <code>ganalytics</code>) to your website via the <code>canalytic</code> option.</p>
-<div class="sourceCode" id="cb3"><pre class="sourceCode yaml"><code class="sourceCode yaml"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="fu">template</span><span class="kw">:</span></span>
-<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a><span class="at">  </span><span class="fu">package</span><span class="kw">:</span><span class="at"> preferably</span></span>
-<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a><span class="at">  </span><span class="fu">params</span><span class="kw">:</span></span>
-<span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a><span class="at">    </span><span class="fu">canalytic</span><span class="kw">:</span></span>
-<span id="cb3-5"><a href="#cb3-5" aria-hidden="true" tabindex="-1"></a><span class="at">      </span><span class="fu">domain</span><span class="kw">:</span><span class="at"> example.com</span></span>
-<span id="cb3-6"><a href="#cb3-6" aria-hidden="true" tabindex="-1"></a><span class="at">      </span><span class="fu">src</span><span class="kw">:</span><span class="at"> https://example.com/tracker.js</span></span></code></pre></div>
+<div class="sourceCode" id="cb3"><pre class="sourceCode yaml"><code class="sourceCode yaml"><span id="cb3-1"><a href="#cb3-1"></a><span class="fu">template</span><span class="kw">:</span></span>
+<span id="cb3-2"><a href="#cb3-2"></a><span class="at">  </span><span class="fu">package</span><span class="kw">:</span><span class="at"> preferably</span></span>
+<span id="cb3-3"><a href="#cb3-3"></a><span class="at">  </span><span class="fu">params</span><span class="kw">:</span></span>
+<span id="cb3-4"><a href="#cb3-4"></a><span class="at">    </span><span class="fu">canalytic</span><span class="kw">:</span></span>
+<span id="cb3-5"><a href="#cb3-5"></a><span class="at">      </span><span class="fu">domain</span><span class="kw">:</span><span class="at"> example.com</span></span>
+<span id="cb3-6"><a href="#cb3-6"></a><span class="at">      </span><span class="fu">src</span><span class="kw">:</span><span class="at"> https://example.com/tracker.js</span></span></code></pre></div>
 <p>Setting these command will generate the following line in the HTML:</p>
-<div class="sourceCode" id="cb4"><pre class="sourceCode html"><code class="sourceCode html"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="kw">&lt;script</span><span class="ot"> async defer data-domain=</span><span class="st">"example.com"</span><span class="ot"> src=</span><span class="st">"https://example.com/tracker.js"</span><span class="kw">&gt;&lt;/script&gt;</span></span></code></pre></div>
+<div class="sourceCode" id="cb4"><pre class="sourceCode html"><code class="sourceCode html"><span id="cb4-1"><a href="#cb4-1"></a><span class="kw">&lt;script</span><span class="ot"> async defer data-domain=</span><span class="st">"example.com"</span><span class="ot"> src=</span><span class="st">"https://example.com/tracker.js"</span><span class="kw">&gt;&lt;/script&gt;</span></span></code></pre></div>
 <p>In case this setting does not satisfy your need or you have a better idea on how to implement this, please reach out on <a href="https://github.com/amirmasoudabdol/preferably/issues/">GitHub</a>.</p>
 </div>
 <div id="lightdark-switch" class="section level3">
 <h3 class="hasAnchor">
 <a href="#lightdark-switch" class="anchor"></a>Light/Dark Switch</h3>
 <p>In addition to the automatic color scheme switching, you can add a switch to the menu bar, e.g, <span class="fas fa-adjust fa"></span>, to allow for manual selection between light and dark themes. This can be done by setting the <code>toggle</code> option to <code>manual</code>.</p>
-<div class="sourceCode" id="cb5"><pre class="sourceCode yaml"><code class="sourceCode yaml"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="fu">template</span><span class="kw">:</span></span>
-<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a><span class="at">  </span><span class="fu">package</span><span class="kw">:</span><span class="at"> preferably</span></span>
-<span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a><span class="at">  </span><span class="fu">params</span><span class="kw">:</span></span>
-<span id="cb5-4"><a href="#cb5-4" aria-hidden="true" tabindex="-1"></a><span class="at">    </span><span class="fu">toggle</span><span class="kw">:</span><span class="at"> manual</span></span></code></pre></div>
-<p>In order to remove the toggle button, remove the <code>toggle</code> parameters entirely.</p>
+<div class="sourceCode" id="cb5"><pre class="sourceCode yaml"><code class="sourceCode yaml"><span id="cb5-1"><a href="#cb5-1"></a><span class="fu">template</span><span class="kw">:</span></span>
+<span id="cb5-2"><a href="#cb5-2"></a><span class="at">  </span><span class="fu">package</span><span class="kw">:</span><span class="at"> preferably</span></span>
+<span id="cb5-3"><a href="#cb5-3"></a><span class="at">  </span><span class="fu">params</span><span class="kw">:</span></span>
+<span id="cb5-4"><a href="#cb5-4"></a><span class="at">    </span><span class="fu">toggle</span><span class="kw">:</span><span class="at"> manual</span></span></code></pre></div>
+<p>In order to remove the toggle button, remove the <code>toggle</code> parameters.</p>
+<hr>
+</div>
+</div>
+<div id="misc" class="section level2">
+<h2 class="hasAnchor">
+<a href="#misc" class="anchor"></a>Misc.</h2>
+<div id="goal" class="section level4">
+<h4 class="hasAnchor">
+<a href="#goal" class="anchor"></a>Goal</h4>
+<p>The goal of <code>preferably</code> is to improve the accessibility and readability of your documentation websites.</p>
+</div>
+<div id="future-plan" class="section level4">
+<h4 class="hasAnchor">
+<a href="#future-plan" class="anchor"></a>Future Plan</h4>
+<p>My main focus is to keep <code>preferably</code> compatible with <code>pkgdown</code>. Besides, I have a short list of features that I would like to add to the template, and <code>pkgdown</code> package. For those, I prefer to prepare a few pull requests and add them to <code>pkgdown</code> instead of diverging the <code>preferably</code> from its core. Let’s see when I get to them! 😅</p>
+</div>
+<div id="contribution" class="section level4">
+<h4 class="hasAnchor">
+<a href="#contribution" class="anchor"></a>Contribution</h4>
+<p>If you found any bugs, or have any suggestions, please feel free to reach out to me, either by either opening an <a href="https://github.com/amirmasoudabdol/preferably/issues/">issue</a> or even a pull request, or even writing an email.</p>
+</div>
+<div id="support" class="section level4">
+<h4 class="hasAnchor">
+<a href="#support" class="anchor"></a>Support</h4>
+<p>Please let me know if you happen to use <code>preferably</code>. I think I will soon start promoting and making a list of your websites!</p>
+<p>Lastly, I quite like <a href="https://ko-fi.com/C0C47DMK">ko-fi</a>! 😋</p>
 </div>
 </div>
 </div>
@@ -189,7 +221,7 @@
 </div>
 
 <div class="pkgdown">
-  <p>Made with <a href="https://pkgdown.r-lib.org/">pkgdown</a> 1.6.1.9000, using <a href="https://preferably.amirmasoudabdol.name/?source=footer">preferably</a> template.</p>
+  <p>Made with <a href="https://pkgdown.r-lib.org/">pkgdown</a> 1.6.1, using <a href="https://preferably.amirmasoudabdol.name/?source=footer">preferably</a> template.</p>
 </div>
 
       </footer>
