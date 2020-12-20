@@ -11,6 +11,14 @@ authors:
 development:
   mode: auto
 
+navbar:
+  structure:
+    right: [kofi, github]
+  components:
+    kofi:
+      icon: "fas fa-coffee fa-lg"
+      href: https://ko-fi.com/C0C47DMK
+
 repo:
   url:
     home: https://github.com/amirmasoudabdol/preferably/

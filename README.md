@@ -14,6 +14,8 @@ install.packages("devtools"); library(devtools)
 devtools::install_github("amirmasoudabdol/preferably")
 ```
 
+→ **After** the package is available on CRAN, you can install it like any other R package.
+
 ## Usage
 
 After the successful installation, if you already have your pkgdown setup ready, you only need to specify the `template` parameter as follow. Then, as before, you can build your site using `build_site()` and deploy it manually using `deploy_on_branch()`.
@@ -25,9 +27,9 @@ template:
 
 > ⚠️ Keep in mind that you should NOT use `default_assets: false` when you change the default template. 'preferably' relies on some of the 'pkgdown' assets and templates.
 
-### Integeration
+### Integration
 
-In the case that you are using CI systems to build and deploy your website, you need to make sure that 'preferably' is available on the enviroment. For [GitHub Action](https://pkgdown.r-lib.org/articles/pkgdown.html?q=github%20action#publishing), add the following line to the "Install dependencies" section of your `.github/workflows/pkgdown.yaml` file:
+In the case that you are using CI systems to build and deploy your website, you need to make sure that 'preferably' is available on the environment. For [GitHub Action](https://pkgdown.r-lib.org/articles/pkgdown.html?q=github%20action#publishing), add the following line to the "Install dependencies" section of your `.github/workflows/pkgdown.yaml` file:
 
 ```YAML
 - name: Install dependencies
@@ -92,11 +94,15 @@ The goal of `preferably` is to improve the accessibility and readability of your
 
 #### Future Plan
 
-My main focus is to keep `preferably` compatible with `pkgdown`. Besides, I have a short list of features that I would like to add to the template, and `pkgdown` package. For those, I prefer to prepare a few pull requests and add them to `pkgdown` instead of diverging the `preferably` from its core. Let's see when I get to them! 😅
+My main focus is to keep `preferably` light and compatible with `pkgdown`. Besides, I have a short list of features that I would like to add to template files, and `pkgdown` package. For those, I prefer to prepare a few pull requests and add them to `pkgdown` instead of diverging the `preferably` from its core. Let's see when I get to them! Here is a few:
+
+- Adding dynamic font scaling to the template
+- Improving the appearance of the argument list
+- Trimming down the size of default pkgdown templates and assets
 
 #### Contribution
 
-If you found any bugs, or have any suggestions, please feel free to reach out to me, either by either opening an [issue](https://github.com/amirmasoudabdol/preferably/issues/) or even a pull request, or even writing an email. 
+If you found any bugs, or have any suggestions, please feel free to reach out to me, either by opening an [issue](https://github.com/amirmasoudabdol/preferably/issues/) or a pull request, or dropping an email. 
 
 #### Support
 
