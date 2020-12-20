@@ -13,7 +13,7 @@ development:
 
 navbar:
   structure:
-    right: [kofi, github]
+    right: [github, kofi]
   components:
     kofi:
       icon: "fas fa-coffee fa-lg"
