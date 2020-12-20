@@ -86,6 +86,12 @@
         </li>
         
         <li>
+  <a href="https://ko-fi.com/C0C47DMK">
+    <span class="fas fa-coffee fa-lg"></span>
+     
+  </a>
+</li>
+<li>
   <a href="https://github.com/amirmasoudabdol/preferably/">
     <span class="fab fa-github fa-lg"></span>
      
@@ -117,6 +123,7 @@
 <code class="sourceCode R"><span class="fu"><a href="https://rdrr.io/r/utils/install.packages.html">install.packages</a></span><span class="op">(</span><span class="st">"devtools"</span><span class="op">)</span>; <span class="kw"><a href="https://rdrr.io/r/base/library.html">library</a></span><span class="op">(</span><span class="va">devtools</span><span class="op">)</span>
 
 <span class="fu">devtools</span><span class="fu">::</span><span class="fu">install_github</span><span class="op">(</span><span class="st">"amirmasoudabdol/preferably"</span><span class="op">)</span></code></pre></div>
+<p>→ <strong>After</strong> the package is available on CRAN, you can install it like any other R package.</p>
 </div>
 <div id="usage" class="section level2">
 <h2 class="hasAnchor">
@@ -127,10 +134,10 @@
 <blockquote>
 <p>⚠️ Keep in mind that you should NOT use <code>default_assets: false</code> when you change the default template. ‘preferably’ relies on some of the ‘pkgdown’ assets and templates.</p>
 </blockquote>
-<div id="integeration" class="section level3">
+<div id="integration" class="section level3">
 <h3 class="hasAnchor">
-<a href="#integeration" class="anchor"></a>Integeration</h3>
-<p>In the case that you are using CI systems to build and deploy your website, you need to make sure that ‘preferably’ is available on the enviroment. For <a href="https://pkgdown.r-lib.org/articles/pkgdown.html?q=github%20action#publishing">GitHub Action</a>, add the following line to the “Install dependencies” section of your <code>.github/workflows/pkgdown.yaml</code> file:</p>
+<a href="#integration" class="anchor"></a>Integration</h3>
+<p>In the case that you are using CI systems to build and deploy your website, you need to make sure that ‘preferably’ is available on the environment. For <a href="https://pkgdown.r-lib.org/articles/pkgdown.html?q=github%20action#publishing">GitHub Action</a>, add the following line to the “Install dependencies” section of your <code>.github/workflows/pkgdown.yaml</code> file:</p>
 <div class="sourceCode" id="cb3"><pre class="sourceCode yaml"><code class="sourceCode yaml"><span id="cb3-1"><a href="#cb3-1"></a><span class="kw">-</span><span class="at"> </span><span class="fu">name</span><span class="kw">:</span><span class="at"> Install dependencies</span></span>
 <span id="cb3-2"><a href="#cb3-2"></a><span class="fu">  run</span><span class="kw">: </span><span class="ch">|</span></span>
 <span id="cb3-3"><a href="#cb3-3"></a>    # ⚠️ leave other commands intact, </span>
@@ -182,12 +189,17 @@
 <div id="future-plan" class="section level4">
 <h4 class="hasAnchor">
 <a href="#future-plan" class="anchor"></a>Future Plan</h4>
-<p>My main focus is to keep <code>preferably</code> compatible with <code>pkgdown</code>. Besides, I have a short list of features that I would like to add to the template, and <code>pkgdown</code> package. For those, I prefer to prepare a few pull requests and add them to <code>pkgdown</code> instead of diverging the <code>preferably</code> from its core. Let’s see when I get to them! 😅</p>
+<p>My main focus is to keep <code>preferably</code> light and compatible with <code>pkgdown</code>. Besides, I have a short list of features that I would like to add to template files, and <code>pkgdown</code> package. For those, I prefer to prepare a few pull requests and add them to <code>pkgdown</code> instead of diverging the <code>preferably</code> from its core. Let’s see when I get to them! Here is a few:</p>
+<ul>
+<li>Adding dynamic font scaling to the template</li>
+<li>Improving the appearance of the argument list</li>
+<li>Trimming down the size of default pkgdown templates and assets</li>
+</ul>
 </div>
 <div id="contribution" class="section level4">
 <h4 class="hasAnchor">
 <a href="#contribution" class="anchor"></a>Contribution</h4>
-<p>If you found any bugs, or have any suggestions, please feel free to reach out to me, either by either opening an <a href="https://github.com/amirmasoudabdol/preferably/issues/">issue</a> or even a pull request, or even writing an email.</p>
+<p>If you found any bugs, or have any suggestions, please feel free to reach out to me, either by opening an <a href="https://github.com/amirmasoudabdol/preferably/issues/">issue</a> or a pull request, or dropping an email.</p>
 </div>
 <div id="support" class="section level4">
 <h4 class="hasAnchor">
