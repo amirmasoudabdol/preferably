@@ -4,26 +4,19 @@
 
 <!-- Inform modern browsers that this page supports both dark and light color schemes,
   and the page author prefers light. -->
-{{#yaml}}
-  {{#toggle}}
-    
-  {{/toggle}}
-  {{^toggle}}
-    <meta name="color-scheme" content="dark light">
-    <script>
-      // If `prefers-color-scheme` is not supported, fall back to light mode.
-      // i.e. In this case, inject the `light` CSS before the others, with
-      // no media filter so that it will be downloaded with highest priority.
-      if (window.matchMedia("(prefers-color-scheme: dark)").media === "not all") {
-        document.documentElement.style.display = "none";
-        document.head.insertAdjacentHTML(
-          "beforeend",
-          "<link id=\"css\" rel=\"stylesheet\" href=\"https://bootswatch.com/3/flatly/bootstrap.css\" onload=\"document.documentElement.style.display = ''\">"
-        );
-      }
-    </script>
-  {{/toggle}}
-{{/yaml}}
+<meta name="color-scheme" content="dark light">
+<script>
+  // If `prefers-color-scheme` is not supported, fall back to light mode.
+  // i.e. In this case, inject the `light` CSS before the others, with
+  // no media filter so that it will be downloaded with highest priority.
+  if (window.matchMedia("(prefers-color-scheme: dark)").media === "not all") {
+    document.documentElement.style.display = "none";
+    document.head.insertAdjacentHTML(
+      "beforeend",
+      "<link id=\"css\" rel=\"stylesheet\" href=\"https://bootswatch.com/3/flatly/bootstrap.css\" onload=\"document.documentElement.style.display = ''\">"
+    );
+  }
+</script>
 
 <title>{{{pagetitle}}} • {{#site}}{{title}}{{/site}}</title>
 
