@@ -7,7 +7,7 @@
 
 ##### Improved
 
-- README page
+- Reduced the overall size of the package
 
 ## preferably 0.1.0
 
