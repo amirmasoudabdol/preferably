@@ -1,16 +1,21 @@
 $(document).ready(function(){
 
-  // Update the toggle button based on current color scheme
-  function updateDarkToggleButton() {
-    $dark = (window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches);
-    $("#css-toggle-btn").prop( "checked", $dark );
-  }
-  // Update on first load.
-  updateDarkToggleButton();
-  // and every time it changes
-  if (window.matchMedia) window.matchMedia("(prefers-color-scheme: dark)").addListener( updateDarkToggleButton );
+  prefersDarkScheme = window.matchMedia("(prefers-color-scheme: dark)");
 
-  // Color Scheme toggle botton
+  currentTheme = localStorage.getItem("theme");
+  if (currentTheme) {
+    init_color_scheme_css("css", currentTheme);
+    init_color_scheme_css("css-code", currentTheme);
+  } else if (prefersDarkScheme) {
+    if (typeof $mode === 'undefined') {
+      $mode = 'light';
+      if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) $mode = 'dark';
+      init_color_scheme_css("css", $mode);
+      init_color_scheme_css("css-code", $mode);
+    }
+    toggle_color_scheme_css("css", $mode);
+    toggle_color_scheme_css("css-code", $mode);
+  }
 
   // function to initialise the css
   function init_color_scheme_css($id, $mode) {
@@ -56,6 +61,9 @@ $(document).ready(function(){
     toggle_color_scheme_css("css", $new_mode);
     toggle_color_scheme_css("css-code", $new_mode);
     // `toggle_color_scheme_css()` any other CSS
+
+    // Saving user's preference to the localStorage
+    localStorage.setItem("theme", $new_mode);
   });
 
 });

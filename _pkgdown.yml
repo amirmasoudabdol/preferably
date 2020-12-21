@@ -30,10 +30,10 @@ repo:
 template:
   package: preferably
   params:
+    toggle: manual
     canalytics:
       domain: preferably.amirmasoudabdol.name
       src: https://stats.preferably.amirmasoudabdol.name/js/index.js
-    toggle: manual
   opengraph:
     image:
       src: man/figures/twitter-summary-card.png
