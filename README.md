@@ -71,9 +71,9 @@ Setting these command will generate the following line in the HTML:
 
 In case this setting does not satisfy your need or you have a better idea on how to implement this, please reach out on [GitHub](https://github.com/amirmasoudabdol/preferably/issues/).
 
-### Light/Dark Switch
+### Manual Light/Dark Toggle
 
-In addition to the automatic color scheme switching, you can add a switch to the menu bar, e.g, <span class="fas fa-adjust fa"></span>, to allow for manual selection between light and dark themes. This can be done by setting the `toggle` option to `manual`.
+In addition to the automatic color scheme switching, you can add a switch to the menu bar, e.g, <span class="fas fa-adjust fa"></span>, to allow for manual selection between light and dark themes. This can be done by setting the `toggle` option to `manual`. 
 
 ```YAML
 template:
@@ -82,7 +82,9 @@ template:
     toggle: manual
 ```
 
-In order to remove the toggle button, remove the `toggle` parameters.
+Unfortunately, it is not possible to have both the automatic and manual mode at the same time. There is an user experience issue here, and it is almost impossible to deliver a seamless experience without involving the server-side, [here](https://kilianvalkhof.com/2020/design/your-dark-mode-toggle-is-broken/), and [here](https://www.joshwcomeau.com/react/dark-mode/). So, you need to choose whether you like to give your users a manual toggle, or let your website adapts to their system preference.
+
+> ⚠️ In order to remove the toggle button, remove the `toggle` parameters.
 
 - - -
 

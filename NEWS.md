@@ -7,7 +7,7 @@
 ##### Changes
 
 - Automatic and manual switching cannot be activated at the same time anymore.
-	- There is a UX issue here, and it's almost impossible to deliver a seamless experience without involving the server-side. So, you need to choose whether you like to give your users a manual toggle, or let your website adapt to their system preference.
+	- It is almost impossible to deliver a seamless experience without involving the server-side. So, you need to choose whether you like to give your users a manual toggle, or let your website adapts to their system preference.
 
 ## preferably 0.2.0
 
