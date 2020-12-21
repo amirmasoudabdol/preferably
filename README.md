@@ -96,9 +96,9 @@ The goal of `preferably` is to improve the accessibility and readability of your
 
 My main focus is to keep `preferably` light and compatible with `pkgdown`. Besides, I have a short list of features that I would like to add to template files, and `pkgdown` package. For those, I prefer to prepare a few pull requests and add them to `pkgdown` instead of diverging the `preferably` from its core. Let's see when I get to them! Here is a few:
 
-- Adding dynamic font scaling to the template
-- Improving the appearance of the argument list
-- Trimming down the size of default pkgdown templates and assets
+- Adding support for responsive text sizing
+- Improving the appearance of argument lists
+- Minimizing the size of default pkgdown templates and assets
 
 #### Contribution
 
