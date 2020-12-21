@@ -17,7 +17,7 @@
     document.documentElement.style.display = "none";
     document.head.insertAdjacentHTML(
       "beforeend",
-      "<link id=\"css\" rel=\"stylesheet\" href=\"bootstrap.css\" onload=\"document.documentElement.style.display = ''\">"
+      "<link id=\"css\" rel=\"stylesheet\" href=\"https://bootswatch.com/3/flatly/bootstrap.css\" onload=\"document.documentElement.style.display = ''\">"
     );
   }
 </script>
@@ -48,9 +48,6 @@
 <link rel="stylesheet" href="../preferably.css">
 <link id="css-code-light" rel="stylesheet" href="../code-color-scheme-light.css" media="(prefers-color-scheme: light), (prefers-color-scheme: no-preference)">
 <link id="css-code-dark" rel="stylesheet" href="../code-color-scheme-dark.css" media="(prefers-color-scheme: dark)">
-
-
-<script src="../darkswitch.js"></script>
 
 
 <!-- bootstrap-toc -->
@@ -118,7 +115,7 @@
       </button>
       <span class="navbar-brand">
         <a class="navbar-link" href="../index.html">preferably</a>
-        <span class="version label label-default" data-toggle="tooltip" data-placement="bottom" title="Released version">0.2.0</span>
+        <span class="version label label-default" data-toggle="tooltip" data-placement="bottom" title="Released version">0.3.0</span>
       </span>
     </div>
 
@@ -138,12 +135,6 @@
 </li>
       </ul>
       <ul class="nav navbar-nav navbar-right">
-        
-        <li>
-          <a href="#" id="css-toggle-btn">
-            <span class="fas fa-adjust fa-lg"></span>
-          </a>
-        </li>
         
         <li>
   <a href="https://github.com/amirmasoudabdol/preferably/">
@@ -174,12 +165,34 @@
       <small>Source: <a href='https://github.com/amirmasoudabdol/preferably/blob/main/NEWS.md'><code>NEWS.md</code></a></small>
     </div>
 
-    <div id="preferably-020" class="section level2">
+    <div id="preferably-030" class="section level2">
 <h2 class="hasAnchor">
-<a href="#preferably-020" class="anchor"></a>preferably 0.2.0</h2>
+<a href="#preferably-030" class="anchor"></a>preferably 0.3.0</h2>
 <div id="new" class="section level5">
 <h5 class="hasAnchor">
 <a href="#new" class="anchor"></a>New</h5>
+<ul>
+<li>In the manual light/dark mode, preferably now uses localStorage to remember user’s preference.</li>
+</ul>
+</div>
+<div id="changes" class="section level5">
+<h5 class="hasAnchor">
+<a href="#changes" class="anchor"></a>Changes</h5>
+<ul>
+<li>Automatic and manual switching cannot be activated at the same time anymore.
+<ul>
+<li>It is almost impossible to deliver a seamless experience without involving the server-side. So, you need to choose whether you like to give your users a manual toggle, or let your website adapts to their system preference.</li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+    <div id="preferably-020" class="section level2">
+<h2 class="hasAnchor">
+<a href="#preferably-020" class="anchor"></a>preferably 0.2.0</h2>
+<div id="new-1" class="section level5">
+<h5 class="hasAnchor">
+<a href="#new-1" class="anchor"></a>New</h5>
 <ul>
 <li>Ability to add a custom analytics script using <code>canalytics</code> parameter.</li>
 <li>Ability to add a light/dark toggle button using <code>toggle</code> parameter.</li>
