@@ -11,14 +11,6 @@ authors:
 development:
   mode: auto
 
-navbar:
-  structure:
-    right: [github, kofi]
-  components:
-    kofi:
-      icon: "fas fa-coffee fa-lg"
-      href: https://ko-fi.com/C0C47DMK
-
 repo:
   url:
     home: https://github.com/amirmasoudabdol/preferably/
@@ -33,6 +25,8 @@ template:
     canalytics:
       domain: preferably.amirmasoudabdol.name
       src: https://stats.preferably.amirmasoudabdol.name/js/index.js
+    github-sponsor:
+      url: https://github.com/sponsors/amirmasoudabdol/
   opengraph:
     image:
       src: man/figures/twitter-summary-card.png
