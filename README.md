@@ -2,9 +2,11 @@
 
 preferably is an **accessible** template for [pkgdown](https://pkgdown.r-lib.org/) documentation websites. It uses a [light](https://bootswatch.com/flatly/) and a [dark](https://bootswatch.com/darkly/) theme and utilizes the [`prefers-color-scheme`](https://developer.mozilla.org/en-US/docs/Web/CSS/@media/prefers-color-scheme) CSS variable to *automatically* serve either of the two based on users' operating system setting, or allowing them to manually toggle between them.
 
-Besides offering light and dark mode, I spent some time making the overall reading experience of pkgdown documentations just a bit nicer, by using richer fonts, adopting a better color scheme for codes, etc. 
+Besides offering light and dark mode, I spent some time making the overall reading experience of 'pkgdown' documentations just a bit nicer, by using richer fonts, adopting a better color scheme for codes, etc. 
 
 ![](man/figures/comparison.png)
+
+> Please let me know if you happen to use my template in your project. I'd like to keep a list of websites that are using 'preferably', see here: [In the Wild](articles/in-the-wild.html)!
 
 ## Installation
 
@@ -108,6 +110,6 @@ If you found any bugs, or have any suggestions, please feel free to reach out to
 
 #### Support
 
-Please let me know if you happen to use `preferably`. I think I will soon start promoting and making a list of your websites! 
+You can support my projects by either sponsoring me on [GitHub](https://github.com/sponsors/amirmasoudabdol) or buying me a few cups of coffee! 
 
-Lastly, I quite like [ko-fi](https://ko-fi.com/C0C47DMK)! 😋
+[![ko-fi](https://ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/C0C47DMK)

@@ -19,6 +19,16 @@ repo:
     user: https://github.com/amirmasoudabdol/
   branch: main
 
+navbar:
+  structure:
+    left:  [home, reference, news, in_the_wild]
+    right: [github]
+  components:
+    articles:
+    in_the_wild:
+      text: "In the Wild"
+      href: articles/in-the-wild.html
+
 template:
   package: preferably
   params:
