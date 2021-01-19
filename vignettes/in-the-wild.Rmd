@@ -17,3 +17,4 @@ list.
 - [tinymv](https://stefanocoretta.github.io/tidymv/index.html): Tidy Model Visualisation for Generalised Additive Models
 - [bitmexr](https://hfshr.github.io/bitmexr/): R Client for the bitmex exchange
 - [poweRof10](https://powerof10.hfshr.xyz): Tools to scrape data from athletics rankings website
+- [tinieR](https://jmablog.github.io/tinieR/): Shrink image filesizes with the TinyPNG API.
