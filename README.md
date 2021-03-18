@@ -86,7 +86,7 @@ template:
 
 Unfortunately, it is not possible to have both the automatic and manual mode at the same time. There is an user experience issue here, and it is almost impossible to deliver a seamless experience without involving the server-side, [here](https://kilianvalkhof.com/2020/design/your-dark-mode-toggle-is-broken/), and [here](https://www.joshwcomeau.com/react/dark-mode/). So, you need to choose whether you like to give your users a manual toggle, or let your website adapts to their system preference.
 
-> ⚠️ In order to remove the toggle button, remove the `toggle` parameters.
+> ⚠️ In order to remove the toggle button, remove the `toggle` parameter.
 
 - - -
 
