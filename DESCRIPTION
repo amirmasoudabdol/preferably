@@ -18,7 +18,8 @@ URL: https://preferably.amirmasoudabdol.name
 BugReports: https://github.com/amirmasoudabdol/preferably/issues
 Depends:
     R (>= 3.4.0)
-Suggests:
+Imports: 
+    pkgdown,
     knitr,
     rmarkdown
 VignetteBuilder: 
