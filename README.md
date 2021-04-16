@@ -54,7 +54,7 @@ In addition of pkgdown customization, Preferably offers a few more options as li
 
 ### Custom Analytic
 
-Preferably allows for adding a custom analytics (in addition to `ganalytics`) to your website via the `canalytic` option.
+Preferably allows for adding a custom analytic (in addition to `ganalytics`) to your website via the `canalytic` option.
 
 ```YAML
 template:

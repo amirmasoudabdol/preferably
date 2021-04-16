@@ -13,7 +13,7 @@
 
 ## New
 
-- Ability to add a custom analytics script using `canalytics` parameter.
+- Ability to add a custom analytic script using `canalytics` parameter.
 - Ability to add a light/dark toggle button using `toggle` parameter.
 
 ## Improved

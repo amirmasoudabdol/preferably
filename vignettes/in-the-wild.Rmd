@@ -8,14 +8,14 @@ vignette: >
 ---
 
 Here, I try to keep a list of websites that are using 'preferably' for their
-'pkgdown' documenation. Feel free to add your website to the list, or ping me 
+'pkgdown' documentation. Feel free to add your website to the list, or ping me 
 on [Twitter](https://twitter.com/@amirmasoudabdol), and I can just add it to the
 list.
 
 - [sfthemes](http://amirmasoudabdol.github.io/sfthemes): San Francisco Themes
 - [rticulate](https://stefanocoretta.github.io/rticulate/): Ultrasound Tongue Imaging in R
-- [tinymv](https://stefanocoretta.github.io/tidymv/index.html): Tidy Model Visualisation for Generalised Additive Models
+- [tinymv](https://stefanocoretta.github.io/tidymv/index.html): Tidy Model Visualization for Generalized Additive Models
 - [bitmexr](https://hfshr.github.io/bitmexr/): R Client for the bitmex exchange
 - [poweRof10](https://powerof10.hfshr.xyz): Tools to scrape data from athletics rankings website
-- [tinieR](https://jmablog.github.io/tinieR/): Shrink image filesizes with the TinyPNG API.
+- [tinieR](https://jmablog.github.io/tinieR/): Shrink image file sizes with the TinyPNG API.
 - [speakr](https://stefanocoretta.github.io/speakr/index.html): A Wrapper for the Phonetic Software Praat
