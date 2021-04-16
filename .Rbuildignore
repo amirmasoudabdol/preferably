@@ -11,3 +11,4 @@
 ^inst/\.DS_Store$
 ^inst/pkgdown/\.DS_Store$
 ^cran-comments\.md$
+^CRAN-RELEASE$
