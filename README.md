@@ -6,7 +6,7 @@ Besides offering light and dark mode, I spent some time making the overall readi
 
 ![](man/figures/comparison.png)
 
-> Please let me know if you happen to use my template in your project. I'd like to keep a list of websites that are using 'preferably', see here: [In the Wild](articles/in-the-wild.html)!
+> Please let me know if you happen to use my template in your project. I'd like to keep a list of websites that are using 'preferably', see here: [In the Wild](https://preferably.amirmasoudabdol.name/articles/in-the-wild.html)!
 
 ## Installation
 
