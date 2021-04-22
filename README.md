@@ -10,13 +10,13 @@ Besides offering light and dark mode, I spent some time making the overall readi
 
 ## Installation
 
+You can download the stable version from CRAN using `install.packages("preferably")`, or you may download the development version from GitHub as follow:
+
 ```R
 install.packages("devtools"); library(devtools)
 
 devtools::install_github("amirmasoudabdol/preferably")
 ```
-
-→ **After** the package is available on CRAN, you can install it like any other R package.
 
 ## Usage
 
