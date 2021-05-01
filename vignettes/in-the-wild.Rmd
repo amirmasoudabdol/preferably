@@ -19,3 +19,8 @@ list.
 - [poweRof10](https://powerof10.hfshr.xyz): Tools to scrape data from athletics rankings website
 - [tinieR](https://jmablog.github.io/tinieR/): Shrink image file sizes with the TinyPNG API.
 - [speakr](https://stefanocoretta.github.io/speakr/index.html): A Wrapper for the Phonetic Software Praat
+- [ggstatsplot](https://github.com/IndrajeetPatil/ggstatsplot): Enhancing ggplot2 plots with statistical analysis 📊🎨📣
+- [statsExpressions](https://github.com/IndrajeetPatil/statsExpressions): Dataframes and expressions with statistical details
+- [broomExtra](https://github.com/IndrajeetPatil/broomExtra): Helpers for regression analyses using broom & easystats packages 📈 🔍
+- [pairwiseComparisons]( https://github.com/IndrajeetPatil/pairwiseComparisons): Pairwise comparison tests for one-way designs 🔬📝
+- [kittyR](https://github.com/IndrajeetPatil/kittyR): Bring those kitties and their meows to R console 🐈🐈🐈
