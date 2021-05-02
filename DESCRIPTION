@@ -1,7 +1,7 @@
 Type: Package
 Package: preferably
 Title: A 'pkgdown' Template
-Version: 0.3.0
+Version: 0.3.1
 Authors@R: 
     person(given = "Amir Masoud",
            family = "Abdol",
