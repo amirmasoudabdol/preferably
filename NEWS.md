@@ -1,3 +1,9 @@
+# preferably 0.3.1
+
+## Changes
+
+- Changed the color of hyperlink in the light mode from `#18BC9B` to `#11866F` which has a better contrast ratio with the light background. Thanks @EllaKaye!
+
 # preferably 0.3.0
 
 ## New

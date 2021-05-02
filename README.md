@@ -1,6 +1,6 @@
 # preferably <img src="man/figures/logo.png" width="120" align="right"/>
 
-preferably is an **accessible** template for [pkgdown](https://pkgdown.r-lib.org/) documentation websites. It uses a [light](https://bootswatch.com/flatly/) and a [dark](https://bootswatch.com/darkly/) theme and utilizes the [`prefers-color-scheme`](https://developer.mozilla.org/en-US/docs/Web/CSS/@media/prefers-color-scheme) CSS variable to *automatically* serve either of the two based on users' operating system setting, or allowing them to manually toggle between them.
+{preferably} is an **accessible** template for [pkgdown](https://pkgdown.r-lib.org/) documentation websites. It uses a [light](https://bootswatch.com/flatly/) and a [dark](https://bootswatch.com/darkly/) theme and utilizes the [`prefers-color-scheme`](https://developer.mozilla.org/en-US/docs/Web/CSS/@media/prefers-color-scheme) CSS variable to *automatically* serve either of the two based on users' operating system setting, or allowing them to manually toggle between them.
 
 Besides offering light and dark mode, I spent some time making the overall reading experience of 'pkgdown' documentations just a bit nicer, by using richer fonts, adopting a better color scheme for codes, etc. 
 
