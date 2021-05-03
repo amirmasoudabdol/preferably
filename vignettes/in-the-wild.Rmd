@@ -24,3 +24,4 @@ list.
 - [broomExtra](https://github.com/IndrajeetPatil/broomExtra): Helpers for regression analyses using broom & easystats packages 📈 🔍
 - [pairwiseComparisons]( https://github.com/IndrajeetPatil/pairwiseComparisons): Pairwise comparison tests for one-way designs 🔬📝
 - [kittyR](https://github.com/IndrajeetPatil/kittyR): Bring those kitties and their meows to R console 🐈🐈🐈
+- [metafor](https://wviechtb.github.io/metafor/index.html): A Meta-Analysis Package for R
