@@ -110,6 +110,4 @@ If you found any bugs, or have any suggestions, please feel free to reach out to
 
 #### Support
 
-You can support my projects by either sponsoring me on [GitHub](https://github.com/sponsors/amirmasoudabdol) or buying me a few cups of coffee! 
-
-[![ko-fi](https://ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/C0C47DMK)
+If you enjoy using {preferably}, please consider supporting it on [GitHub](https://github.com/sponsors/amirmasoudabdol). You can sponsor me monthly, or make a one-time donation! 🤗
