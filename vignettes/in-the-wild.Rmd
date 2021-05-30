@@ -25,3 +25,4 @@ list.
 - [pairwiseComparisons]( https://github.com/IndrajeetPatil/pairwiseComparisons): Pairwise comparison tests for one-way designs 🔬📝
 - [kittyR](https://github.com/IndrajeetPatil/kittyR): Bring those kitties and their meows to R console 🐈🐈🐈
 - [metafor](https://wviechtb.github.io/metafor/index.html): A Meta-Analysis Package for R
+- [distilltools](https://ellakaye.github.io/distilltools): A collection of tools to support the creation and styling of content on {distill} websites
