@@ -1,7 +1,12 @@
 <div class="copyright">
-  <p>{{#package}}Developed by {{{authors}}}.{{/package}}</p>
+  <p>
+    {{{yaml.footer}}}{{^yaml.footer}}Developed by {{#package}}{{{authors}}}{{/package}}.{{/yaml.footer}}
+    </p>
 </div>
 
 <div class="pkgdown">
-  <p>Made with <a href="https://pkgdown.r-lib.org/">pkgdown</a> {{#pkgdown}}{{version}}{{/pkgdown}}, using <a href="https://preferably.amirmasoudabdol.name/?source=footer">preferably</a> template.</p>
+  <p>
+    {{#yaml.footer}}Developed by {{#package}}{{{authors}}}{{/package}}.{{/yaml.footer}}
+    Site built with <a href="https://pkgdown.r-lib.org/">pkgdown</a> {{#pkgdown}}{{version}}{{/pkgdown}} and <a href="https://preferably.amirmasoudabdol.name/?source=footer">preferably</a>.
+  </p>
 </div>
