@@ -28,3 +28,4 @@ list.
 - [distilltools](https://ellakaye.github.io/distilltools): A collection of tools to support the creation and styling of content on {distill} websites
 - [zipcodeR](https://gavinrozzi.github.io/zipcodeR/index.html): Data & functions for working with US ZIP codes
 - [njtr1](https://gavinrozzi.github.io/njtr1/): Download, analyze & clean New Jersey car crash data
+- [did2s](https://kylebutts.com/did2s/): Two-stage Difference-in-Differences package following Gardner (2021)
