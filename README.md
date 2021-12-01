@@ -27,6 +27,16 @@ template:
   package: preferably
 ```
 
+##### {pkgdown} 2.0 and Bootstrap 5
+
+{preferably} 0.4 is compatible with {pkgdown} 2.0 and Bootstrap 5. In order to build your website using the Bootstrap 5, your setting should look like this:
+
+```YAML
+template:
+  package: preferably
+  bootstrap: 5
+```
+
 > ⚠️ Keep in mind that you should NOT use `default_assets: false` when you change the default template. 'preferably' relies on some of the 'pkgdown' assets and templates.
 
 ### Integration
