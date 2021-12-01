@@ -29,6 +29,11 @@ navbar:
       text: "In the Wild"
       href: articles/in-the-wild.html
 
+footer:
+  structure: 
+    left: developed_by
+    right: built_with
+
 template:
   package: preferably
   params:
