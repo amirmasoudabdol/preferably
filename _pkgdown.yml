@@ -30,18 +30,19 @@ navbar:
       href: articles/in-the-wild.html
 
 footer:
-  structure: 
+  structure:
     left: developed_by
     right: built_with
 
 template:
   package: preferably
+  bootstrap: 5
   params:
     canalytics:
       domain: preferably.amirmasoudabdol.name
       src: https://stats.preferably.amirmasoudabdol.name/js/index.js
-    github-sponsor:
-      url: https://github.com/sponsors/amirmasoudabdol/
+    toggle:
+      manual
   opengraph:
     image:
       src: man/figures/twitter-summary-card.png

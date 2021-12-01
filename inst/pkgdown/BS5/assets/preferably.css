@@ -27,7 +27,7 @@ a, a:hover, a:focus {
     color: #11866F;
 }
 
-/*@media (prefers-color-scheme: dark) {
+@media (prefers-color-scheme: dark) {
 
     a, a:hover, a:focus {
         color: #0ce3ac;
@@ -38,4 +38,3 @@ a, a:hover, a:focus {
         fill: #db61a2;
     }
 }
-*/
