@@ -18,18 +18,6 @@ pre, code, pre.usage, code.sourceCode.r, .sourceCode, .examples, .downlit, .sour
     font-weight: 500;
 }
 
-a, a:hover, a:focus {
-    color: #11866F;
-}
-
 .preferably {
     margin-top: -8px;
-}
-
-@media (prefers-color-scheme: dark) {
-
-    a, a:hover, a:focus {
-        color: #0ce3ac;
-    }
-
 }
