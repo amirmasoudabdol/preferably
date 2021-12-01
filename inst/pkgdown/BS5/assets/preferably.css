@@ -18,11 +18,6 @@ pre, code, pre.usage, code.sourceCode.r, .sourceCode, .examples, .downlit, .sour
     font-weight: 500;
 }
 
-.github-love {
-    stroke: #ea4aaa;
-    fill: #ea4aaa;
-}
-
 a, a:hover, a:focus {
     color: #11866F;
 }
@@ -37,8 +32,4 @@ a, a:hover, a:focus {
         color: #0ce3ac;
     }
 
-    .github-love {
-        stroke: #db61a2;
-        fill: #db61a2;
-    }
 }

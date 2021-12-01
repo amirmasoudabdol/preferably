@@ -28,7 +28,7 @@ a, a:hover, a:focus {
 }
 
 .preferably {
-    margin-top: -4px;
+    margin-top: -2px;
 }
 
 @media (prefers-color-scheme: dark) {
