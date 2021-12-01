@@ -1,15 +1,33 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
+    <loc>https://preferably.amirmasoudabdol.name/404.html</loc>
+  </url>
+  <url>
+    <loc>https://preferably.amirmasoudabdol.name/LICENSE-text.html</loc>
+  </url>
+  <url>
+    <loc>https://preferably.amirmasoudabdol.name/articles/in-the-wild.html</loc>
+  </url>
+  <url>
+    <loc>https://preferably.amirmasoudabdol.name/articles/index.html</loc>
+  </url>
+  <url>
+    <loc>https://preferably.amirmasoudabdol.name/authors.html</loc>
+  </url>
+  <url>
     <loc>https://preferably.amirmasoudabdol.name/index.html</loc>
+  </url>
+  <url>
+    <loc>https://preferably.amirmasoudabdol.name/news/index.html</loc>
+  </url>
+  <url>
+    <loc>https://preferably.amirmasoudabdol.name/reference/index.html</loc>
   </url>
   <url>
     <loc>https://preferably.amirmasoudabdol.name/reference/preferably.html</loc>
   </url>
   <url>
     <loc>https://preferably.amirmasoudabdol.name/reference/test.html</loc>
-  </url>
-  <url>
-    <loc>https://preferably.amirmasoudabdol.name/articles/in-the-wild.html</loc>
   </url>
 </urlset>
