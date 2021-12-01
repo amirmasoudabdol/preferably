@@ -1,3 +1,9 @@
+# preferably 0.3.2
+
+## Changes
+
+- Fixed a minor issue with the footer, https://github.com/amirmasoudabdol/preferably/issues/8#issuecomment-957228703
+
 # preferably 0.3.1
 
 ## Changes
