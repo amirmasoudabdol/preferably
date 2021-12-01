@@ -71,7 +71,7 @@ Setting these command will generate the following line in the HTML:
 <script async defer data-domain="example.com" src="https://example.com/tracker.js"></script>
 ```
 
-In case this setting does not satisfy your need or you have a better idea on how to implement this, please reach out on [GitHub](https://github.com/amirmasoudabdol/preferably/issues/).
+> `{pkgdown}` 2.0 comes with a [greater list of supported trackers](https://pkgdown.r-lib.org/reference/build_site.html?q=plausi#analytics) that you can use out of the box, including [Plausible](https://plausible.io/).
 
 ### Manual Light/Dark Toggle
 

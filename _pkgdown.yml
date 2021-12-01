@@ -37,12 +37,16 @@ footer:
 template:
   package: preferably
   bootstrap: 5
+  includes:
+    in_header: |
+      <script defer data-domain="preferably.amirmasoudabdol.name" src="https://stats.preferably.amirmasoudabdol.name/js/index.js"></script>
+  navbar:
+    bg: primary
   params:
-    canalytics:
-      domain: preferably.amirmasoudabdol.name
-      src: https://stats.preferably.amirmasoudabdol.name/js/index.js
     toggle:
       manual
+    github-sponsor:
+      url: https://github.com/sponsors/amirmasoudabdol/
   opengraph:
     image:
       src: man/figures/twitter-summary-card.png
