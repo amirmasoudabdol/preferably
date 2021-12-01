@@ -40,8 +40,6 @@ template:
   includes:
     in_header: |
       <script defer data-domain="preferably.amirmasoudabdol.name" src="https://stats.preferably.amirmasoudabdol.name/js/index.js"></script>
-  navbar:
-    bg: primary
   params:
     toggle:
       manual
