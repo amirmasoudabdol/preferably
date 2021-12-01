@@ -37,6 +37,8 @@ template:
   bootstrap: 5
 ```
 
+> ⚠️ {preferably} 0.4 is not yet on CRAN, so, unless you are pulling the repo from the github, you should not upgrade yet!
+
 > ⚠️ Keep in mind that you should NOT use `default_assets: false` when you change the default template. 'preferably' relies on some of the 'pkgdown' assets and templates.
 
 ### Integration
