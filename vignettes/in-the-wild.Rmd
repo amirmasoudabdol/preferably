@@ -31,3 +31,4 @@ list.
 - [njtr1](https://gavinrozzi.github.io/njtr1/): Download, analyze & clean New Jersey car crash data
 - [did2s](https://kylebutts.com/did2s/): Two-stage Difference-in-Differences package following Gardner (2021)
 - [Repeatr](https://alexmitrani.github.io/Repeatr/): Analysis and modelling of Fugazi Live Series metadata.
+- [jfa](https://koenderks.github.io/jfa/): Bayesian and Classical Audit Sampling
