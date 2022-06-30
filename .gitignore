@@ -19,6 +19,7 @@ vignettes/*.pdf
 
 # Folders
 docs/
+.idea/
 
 # macOS
 **/.DS_Store

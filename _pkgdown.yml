@@ -22,12 +22,19 @@ repo:
 navbar:
   structure:
     left:  [home, reference, news, in_the_wild]
-    right: [github]
+    right: [packages, github]
   components:
     articles:
     in_the_wild:
       text: "In the Wild"
       href: articles/in-the-wild.html
+    packages:
+      text: "Packages"
+      menu:
+      - text: "San Francisco Themes"
+        href: https://sfthemes.amirmasoudabdol.name
+      - text: "Primer R Markdown"
+        href: https://primermd.amirmasoudabdol.name
 
 footer:
   structure:
