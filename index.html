@@ -79,6 +79,13 @@
 </form>
 
       <ul class="navbar-nav">
+<li class="nav-item dropdown">
+  <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" role="button" aria-expanded="false" aria-haspopup="true" id="dropdown-packages">Packages</a>
+  <div class="dropdown-menu" aria-labelledby="dropdown-packages">
+    <a class="external-link dropdown-item" href="https://sfthemes.amirmasoudabdol.name">San Francisco Themes</a>
+    <a class="external-link dropdown-item" href="https://primermd.amirmasoudabdol.name">Primer R Markdown</a>
+  </div>
+</li>
 <li class="nav-item">
   <a class="external-link nav-link" href="https://github.com/amirmasoudabdol/preferably/" aria-label="github">
     <span class="fab fa fab fa-github fa-lg"></span>
@@ -110,22 +117,20 @@
 <p>{preferably} is an <strong>accessible</strong> template for <a href="https://pkgdown.r-lib.org/" class="external-link">pkgdown</a> documentation websites. It uses a <a href="https://bootswatch.com/flatly/" class="external-link">light</a> and a <a href="https://bootswatch.com/darkly/" class="external-link">dark</a> theme and utilizes the <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/@media/prefers-color-scheme" class="external-link"><code>prefers-color-scheme</code></a> CSS variable to <em>automatically</em> serve either of the two based on users’ operating system setting, or allowing them to manually toggle between them.</p>
 <p>Besides offering light and dark mode, I spent some time making the overall reading experience of ‘pkgdown’ documentations just a bit nicer, by using richer fonts, adopting a better color scheme for codes, etc.</p>
 <p><img src="reference/figures/comparison.png"></p>
-<blockquote>
-<p>Please let me know if you happen to use my template in your project. I’d like to keep a list of websites that are using ‘preferably’, see here: <a href="https://preferably.amirmasoudabdol.name/articles/in-the-wild.html">In the Wild</a>!</p>
-</blockquote>
+<blockquote><p>Please let me know if you happen to use my template in your project. I’d like to keep a list of websites that are using ‘preferably’, see here: <a href="https://preferably.amirmasoudabdol.name/articles/in-the-wild.html">In the Wild</a>!</p></blockquote>
 <div class="section level2">
 <h2 id="installation">Installation<a class="anchor" aria-label="anchor" href="#installation"></a>
 </h2>
 <p>You can download the stable version from CRAN using <code>install.packages("preferably")</code>, or you may download the development version from GitHub as follow:</p>
 <div class="sourceCode" id="cb1"><pre class="downlit sourceCode r">
-<code class="sourceCode R"><span class="fu"><a href="https://rdrr.io/r/utils/install.packages.html" class="external-link">install.packages</a></span><span class="op">(</span><span class="st">"devtools"</span><span class="op">)</span>; <span class="kw"><a href="https://rdrr.io/r/base/library.html" class="external-link">library</a></span><span class="op">(</span><span class="va"><a href="https://devtools.r-lib.org/" class="external-link">devtools</a></span><span class="op">)</span>
-
-<span class="fu">devtools</span><span class="fu">::</span><span class="fu">install_github</span><span class="op">(</span><span class="st">"amirmasoudabdol/preferably"</span><span class="op">)</span></code></pre></div>
+<code class="sourceCode R"><span><span class="fu"><a href="https://rdrr.io/r/utils/install.packages.html" class="external-link">install.packages</a></span><span class="op">(</span><span class="st">"devtools"</span><span class="op">)</span>; <span class="kw"><a href="https://rdrr.io/r/base/library.html" class="external-link">library</a></span><span class="op">(</span><span class="va"><a href="https://devtools.r-lib.org/" class="external-link">devtools</a></span><span class="op">)</span></span>
+<span></span>
+<span><span class="fu">devtools</span><span class="fu">::</span><span class="fu"><a href="https://remotes.r-lib.org/reference/install_github.html" class="external-link">install_github</a></span><span class="op">(</span><span class="st">"amirmasoudabdol/preferably"</span><span class="op">)</span></span></code></pre></div>
 </div>
 <div class="section level2">
 <h2 id="usage">Usage<a class="anchor" aria-label="anchor" href="#usage"></a>
 </h2>
-<p>After the successful installation, if you already have your pkgdown setup ready, you only need to specify the <code>template</code> parameter as follow. Then, as before, you can build your site using <code>build_site()</code> and deploy it manually using <code>deploy_on_branch()</code>.</p>
+<p>After the successful installation, if you already have your pkgdown setup ready, you only need to specify the <code>template</code> parameter as follow. Then, as before, you can build your site using <code><a href="https://devtools.r-lib.org/reference/build_site.html" class="external-link">build_site()</a></code> and deploy it manually using <code>deploy_on_branch()</code>.</p>
 <div class="sourceCode" id="cb2"><pre class="sourceCode yaml"><code class="sourceCode yaml"><span id="cb2-1"><a href="#cb2-1"></a><span class="fu">template</span><span class="kw">:</span></span>
 <span id="cb2-2"><a href="#cb2-2"></a><span class="at">  </span><span class="fu">package</span><span class="kw">:</span><span class="at"> preferably</span></span></code></pre></div>
 <div class="section level5">
@@ -135,9 +140,7 @@
 <div class="sourceCode" id="cb3"><pre class="sourceCode yaml"><code class="sourceCode yaml"><span id="cb3-1"><a href="#cb3-1"></a><span class="fu">template</span><span class="kw">:</span></span>
 <span id="cb3-2"><a href="#cb3-2"></a><span class="at">  </span><span class="fu">package</span><span class="kw">:</span><span class="at"> preferably</span></span>
 <span id="cb3-3"><a href="#cb3-3"></a><span class="at">  </span><span class="fu">bootstrap</span><span class="kw">:</span><span class="at"> </span><span class="dv">5</span></span></code></pre></div>
-<blockquote>
-<p>⚠️ Keep in mind that you should NOT use <code>default_assets: false</code> when you change the default template. ‘preferably’ relies on some of the ‘pkgdown’ assets and templates.</p>
-</blockquote>
+<blockquote><p>⚠️ Keep in mind that you should NOT use <code>default_assets: false</code> when you change the default template. ‘preferably’ relies on some of the ‘pkgdown’ assets and templates.</p></blockquote>
 </div>
 <div class="section level3">
 <h3 id="integration">Integration<a class="anchor" aria-label="anchor" href="#integration"></a>
@@ -169,9 +172,7 @@
 <span id="cb6-6"><a href="#cb6-6"></a><span class="at">      </span><span class="fu">src</span><span class="kw">:</span><span class="at"> https://example.com/tracker.js</span></span></code></pre></div>
 <p>Setting these command will generate the following line in the HTML:</p>
 <div class="sourceCode" id="cb7"><pre class="sourceCode html"><code class="sourceCode html"><span id="cb7-1"><a href="#cb7-1"></a><span class="kw">&lt;script</span><span class="ot"> async defer data-domain=</span><span class="st">"example.com"</span><span class="ot"> src=</span><span class="st">"https://example.com/tracker.js"</span><span class="kw">&gt;&lt;/script&gt;</span></span></code></pre></div>
-<blockquote>
-<p><a href="https://pkgdown.r-lib.org" class="external-link">pkgdown</a> 2.0 comes with a <a href="https://pkgdown.r-lib.org/reference/build_site.html?q=plausi#analytics" class="external-link">greater list of supported trackers</a> that you can use out of the box, including <a href="https://plausible.io/" class="external-link">Plausible</a>.</p>
-</blockquote>
+<blockquote><p><a href="https://pkgdown.r-lib.org" class="external-link">pkgdown</a> 2.0 comes with a <a href="https://pkgdown.r-lib.org/reference/build_site.html?q=plausi#analytics" class="external-link">greater list of supported trackers</a> that you can use out of the box, including <a href="https://plausible.io/" class="external-link">Plausible</a>.</p></blockquote>
 </div>
 <div class="section level3">
 <h3 id="manual-lightdark-toggle">Manual Light/Dark Toggle<a class="anchor" aria-label="anchor" href="#manual-lightdark-toggle"></a>
@@ -182,9 +183,7 @@
 <span id="cb8-3"><a href="#cb8-3"></a><span class="at">  </span><span class="fu">params</span><span class="kw">:</span></span>
 <span id="cb8-4"><a href="#cb8-4"></a><span class="at">    </span><span class="fu">toggle</span><span class="kw">:</span><span class="at"> manual</span></span></code></pre></div>
 <p>Unfortunately, it is not possible to have both the automatic and manual mode at the same time. There is an user experience issue here, and it is almost impossible to deliver a seamless experience without involving the server-side, <a href="https://kilianvalkhof.com/2020/design/your-dark-mode-toggle-is-broken/" class="external-link">here</a>, and <a href="https://www.joshwcomeau.com/react/dark-mode/" class="external-link">here</a>. So, you need to choose whether you like to give your users a manual toggle, or let your website adapts to their system preference.</p>
-<blockquote>
-<p>⚠️ In order to remove the toggle button, remove the <code>toggle</code> parameter.</p>
-</blockquote>
+<blockquote><p>⚠️ In order to remove the toggle button, remove the <code>toggle</code> parameter.</p></blockquote>
 <hr>
 </div>
 </div>
@@ -265,7 +264,7 @@
 
 <div class="pkgdown">
   <p></p>
-<p>Site built with <a href="https://pkgdown.r-lib.org/" class="external-link">pkgdown</a> 2.0.2.</p>
+<p>Site built with <a href="https://pkgdown.r-lib.org/" class="external-link">pkgdown</a> 2.0.5.</p>
   <p class="preferably">Using <a href="https://preferably.amirmasoudabdol.name/?source=footer">preferably</a> template.</p>
 </div>
 
