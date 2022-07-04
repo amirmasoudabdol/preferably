@@ -15,7 +15,7 @@ You can download the stable version from CRAN using `install.packages("preferabl
 ```R
 install.packages("devtools"); library(devtools)
 
-devtools::install_github("amirmasoudabdol/preferably")
+install.packages("preferably")
 ```
 
 ## Usage
@@ -48,7 +48,9 @@ In the case that you are using CI systems to build and deploy your website, you 
   run: |
     # ⚠️ leave other commands intact, 
     # and add the following command to the end of the list 👇🏼
-    remotes::install_github("amirmasoudabdol/preferably", type = "source")
+    remotes::install_deps(dependencies = TRUE)
+    install.packages("pkgdown", type = "binary")
+    install.packages("preferably")
 ```
 
 If you are using Travis-CI, add the following line to your `.travis.yml` file:
