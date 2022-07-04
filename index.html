@@ -125,7 +125,7 @@
 <div class="sourceCode" id="cb1"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span><span class="fu"><a href="https://rdrr.io/r/utils/install.packages.html" class="external-link">install.packages</a></span><span class="op">(</span><span class="st">"devtools"</span><span class="op">)</span>; <span class="kw"><a href="https://rdrr.io/r/base/library.html" class="external-link">library</a></span><span class="op">(</span><span class="va"><a href="https://devtools.r-lib.org/" class="external-link">devtools</a></span><span class="op">)</span></span>
 <span></span>
-<span><span class="fu">devtools</span><span class="fu">::</span><span class="fu"><a href="https://remotes.r-lib.org/reference/install_github.html" class="external-link">install_github</a></span><span class="op">(</span><span class="st">"amirmasoudabdol/preferably"</span><span class="op">)</span></span></code></pre></div>
+<span><span class="fu"><a href="https://rdrr.io/r/utils/install.packages.html" class="external-link">install.packages</a></span><span class="op">(</span><span class="st">"preferably"</span><span class="op">)</span></span></code></pre></div>
 </div>
 <div class="section level2">
 <h2 id="usage">Usage<a class="anchor" aria-label="anchor" href="#usage"></a>
@@ -150,7 +150,9 @@
 <span id="cb4-2"><a href="#cb4-2"></a><span class="fu">  run</span><span class="kw">: </span><span class="ch">|</span></span>
 <span id="cb4-3"><a href="#cb4-3"></a>    # ⚠️ leave other commands intact, </span>
 <span id="cb4-4"><a href="#cb4-4"></a>    # and add the following command to the end of the list 👇🏼</span>
-<span id="cb4-5"><a href="#cb4-5"></a>    remotes::install_github("amirmasoudabdol/preferably", type = "source")</span></code></pre></div>
+<span id="cb4-5"><a href="#cb4-5"></a>    remotes::install_deps(dependencies = TRUE)</span>
+<span id="cb4-6"><a href="#cb4-6"></a>    install.packages("pkgdown", type = "binary")</span>
+<span id="cb4-7"><a href="#cb4-7"></a>    install.packages("preferably")</span></code></pre></div>
 <p>If you are using Travis-CI, add the following line to your <code>.travis.yml</code> file:</p>
 <div class="sourceCode" id="cb5"><pre class="sourceCode yaml"><code class="sourceCode yaml"><span id="cb5-1"><a href="#cb5-1"></a><span class="fu">r_github_packages</span><span class="kw">:</span></span>
 <span id="cb5-2"><a href="#cb5-2"></a><span class="at">  </span><span class="kw">-</span><span class="at"> amirmasoudabdol/preferably</span></span></code></pre></div>
