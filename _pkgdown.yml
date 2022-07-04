@@ -44,9 +44,6 @@ footer:
 template:
   package: preferably
   bootstrap: 5
-  includes:
-    in_header: |
-      <script defer data-domain="preferably.amirmasoudabdol.name" src="https://stats.preferably.amirmasoudabdol.name/js/index.js"></script>
   params:
     github-sponsor:
       url: https://github.com/sponsors/amirmasoudabdol/
