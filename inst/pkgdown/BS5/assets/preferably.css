@@ -37,3 +37,15 @@ pre, code, pre.usage, code.sourceCode.r, .sourceCode, .examples, .downlit, .sour
     }
 
 }
+
+h1 {
+    margin-top: 3rem !important;
+}
+
+aside h2 {
+    margin-top: 2rem !important;
+}
+
+.page-header {
+    border-bottom: none !important;
+}
