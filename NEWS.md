@@ -1,3 +1,11 @@
+# preferably 0.4.1
+
+## Changes
+
+- Fixed the issue where the footer was not adhereing to the dark mode. Reported by @bryce-carson, https://github.com/amirmasoudabdol/preferably/issues/12.
+- Modified the `.page-header` and added a bit of margin to the header itself. Thanks @zero323!
+- Updated for `{pkgdown}` 2.0.6.
+
 # preferably 0.4
 
 ## New
