@@ -34,8 +34,8 @@ jobs:
       - name: Install dependencies
         run: |
           remotes::install_deps(dependencies = TRUE)
-          install.packages(c("pkgdown", "devtools"), type = "binary")
-          install.packages("preferably")
+          install.packages("pkgdown", "devtools"), type = "binary")
+          remotes::install_github("amirmasoudabdol/preferably")
         shell: Rscript {0}
 
       - name: Install package
