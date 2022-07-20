@@ -21,3 +21,19 @@ pre, code, pre.usage, code.sourceCode.r, .sourceCode, .examples, .downlit, .sour
 .preferably {
     margin-top: -8px;
 }
+
+@media (prefers-color-scheme: light) {
+
+    aside {
+        background: #ffffff;
+    }
+
+}
+
+@media (prefers-color-scheme: dark) {
+
+    aside {
+        background: #222222;
+    }
+
+}
