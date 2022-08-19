@@ -46,3 +46,7 @@ pre code span.va      {color: #3032da;} /* values */
 pre code span.message { color: black;   font-weight: bolder;}
 pre code span.error   { color: orange;  font-weight: bolder;}
 pre code span.warning { color: #6A0366; font-weight: bolder;}
+
+aside {
+  background: #fff;
+}
