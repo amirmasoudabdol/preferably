@@ -46,3 +46,7 @@ a.sourceLine:hover {
 .message { color: black;   font-weight: bolder;}
 .error   { color: orange;  font-weight: bolder;}
 .warning { color: #6A0366; font-weight: bolder;}
+
+aside {
+  background: #222;
+}
