@@ -12,7 +12,6 @@
 #' the two based on users' operating system setting, or allowing them to
 #' manually toggle between them.
 #'
-#' @importFrom knitr knit
 #' @importFrom pkgdown build_site
 #'
 #' @md
