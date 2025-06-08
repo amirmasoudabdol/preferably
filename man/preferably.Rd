@@ -2,8 +2,8 @@
 % Please edit documentation in R/preferably-package.R
 \docType{package}
 \name{preferably}
-\alias{preferably}
 \alias{preferably-package}
+\alias{preferably}
 \title{preferably}
 \description{
 An accessible template for pkgdown websites with dynamic light/dark mode

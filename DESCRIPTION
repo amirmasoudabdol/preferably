@@ -2,7 +2,7 @@ Type: Package
 Package: preferably
 Title: A 'pkgdown' Template
 Version: 0.4.1
-Authors@R: 
+Authors@R:
     person(given = "Amir Masoud",
            family = "Abdol",
            role = c("aut", "cre"),
@@ -20,8 +20,8 @@ Depends:
     R (>= 3.1.0),
     pkgdown (>= 2.1.0),
     knitr
-VignetteBuilder: 
+VignetteBuilder:
     knitr
 Encoding: UTF-8
 Language: en-US
-RoxygenNote: 7.2.0
+RoxygenNote: 7.3.2
